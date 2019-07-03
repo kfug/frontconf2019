@@ -1,72 +1,69 @@
 <template>
-  <div class="container">
     <div>
-      <logo />
-      <h1 class="title">
-        frontconf2019
-      </h1>
-      <h2 class="subtitle">
-        My glorious Nuxt.js project
-      </h2>
-      <div class="links">
+<div class="App">
+      <header class="App-header">
+        <img src="~/assets/img/kfuglogo.png" class="App-logo" alt="logo" />
+        <p>
+            FRONTEND CONFERENCE 2019
+        </p>
         <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
+          class="App-link"
+          href=""
+          rel="noopener noreferrer"
         >
-          Documentation
+         coming soon …
         </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      </header>
     </div>
-  </div>
+    </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 
-export default {
-  components: {
-    Logo
-  }
-}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.App {
   text-align: center;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  margin-top:60px;
+  height: 30vmin;
+  pointer-events: none;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.links {
-  padding-top: 15px;
+.App-header p {
+  margin:65px 0px 25px 0px;
 }
+
+.App-link {
+  color: #61dafb;
+}
+
+
 </style>
