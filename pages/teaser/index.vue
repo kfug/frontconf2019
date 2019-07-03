@@ -38,6 +38,7 @@ body {
   margin-top:60px;
   height: 30vmin;
   pointer-events: none;
+  padding: 5vmin;
 }
 .App-header {
   background-color: #282c34;
