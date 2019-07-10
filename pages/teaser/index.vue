@@ -4,14 +4,21 @@
       <header class="App-header">
         <img src="~/assets/img/kfuglogo.png" class="App-logo" alt="logo" />
         <p>
-            FRONTEND CONFERENCE 2019
+            frontend conference, 2019 Nov.02 @Grandfront Osaka
         </p>
+         <a
+          class="App-link"
+          href="https://forms.gle/YGM3jCezsgNJP9K99"
+          rel=""
+        >
+        call for paper
+        </a>
         <a
           class="App-link"
-          href=""
-          rel="noopener noreferrer"
+          href="https://forms.gle/HLwBDwm8Wf1Pyd177"
+          rel=""
         >
-         coming soon …
+         sponsor
         </a>
       </header>
     </div>
@@ -53,7 +60,9 @@ body {
 .App-header p {
   margin:65px 0px 25px 0px;
 }
+
 .App-link {
   color: #61dafb;
-}
+  margin-bottom:10px;
+  }
 </style>
