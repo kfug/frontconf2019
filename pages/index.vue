@@ -4,7 +4,7 @@
       <header class="App-header">
         <img src="~/assets/img/kfuglogo.png" class="App-logo" alt="logo" />
         <p>
-          frontend conference, 2019 Nov.02 @Grandfront Osaka
+          frontend conference 2019 <br> 11.02 @Grandfront Osaka
         </p>
         <a
                 class="App-link"
