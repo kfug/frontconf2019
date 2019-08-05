@@ -28,5 +28,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/scss/_library.scss";
+
 </style>
 
