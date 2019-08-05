@@ -1,18 +1,18 @@
 <template>
   <section>
     <div class="p-hero">
-      <img src="~/assets/img/hero_logoBack.png" class="hero_logoBack" alt="logo" />
-      <img src="~/assets/img/hero_leftTop.png" class="hero_leftTop" alt="logo" />
-      <img src="~/assets/img/hero_leftBottom.png" class="hero_leftBottom" alt="logo" />
-      <img src="~/assets/img/hero_rightTop.png" class="hero_rightTop" alt="logo" />
-      <img src="~/assets/img/hero_rightBottom.png" class="hero_rightBottom" alt="logo" />
-      <!-- <img src="~/assets/img/logo-white.svg" class="App-logo1" alt="logo" /> -->
+      <img src="~/assets/img/logo-white.svg" class="hero_logo" alt="frontend conference 2019" />
+      <img src="~/assets/img/hero_logoBack.png" class="hero_logoBack" />
+      <img src="~/assets/img/hero_leftTop.png" class="hero_leftTop" />
+      <img src="~/assets/img/hero_leftBottom.png" class="hero_leftBottom" />
+      <img src="~/assets/img/hero_rightTop.png" class="hero_rightTop" />
+      <img src="~/assets/img/hero_rightBottom.png" class="hero_rightBottom" />
       <div class="p-container"></div>
-      <h2>2019 .11 .03</h2>
+      <h2>2019 .11 .02</h2>
       <h3>グランフロントにて開催決定!</h3>
       <div class="p-announcement">
         <p>登壇者、スポンサー募集中</p>
-        <img src="~/assets/img/deco_line2.png" class="line1" alt="logo" />
+        <img src="~/assets/img/deco_line2.png" class="line1" />
       </div>
     </div>
   </section>
@@ -24,7 +24,7 @@
 <style lang="scss" scoped>
 @import "~/assets/scss/_library.scss";
 img {
-  zoom: 0.5;
+  width: 20%;
 }
 
 .p-hero {
@@ -33,10 +33,11 @@ img {
   text-align: center;
   font-family: Offside;
   & h2 {
-    padding-top: 670px;
+    padding-top: 400px;
     font-weight: normal;
     font-size: 3.5rem;
     @include desktop {
+      padding-top: 720px;
       font-size: 4rem;
     }
   }
@@ -73,64 +74,97 @@ img {
   }
 }
 
-// .App-logo1 {
-//   max-width: 450px;
-//   text-align: center;
-//   position: absolute;
-//   top:o;
-//   _z-index: 2;
-// }
+.hero_logo {
+  width: 60%;
+  min-width: 250px;
+  position: absolute;
+  top: 17%;
+  left: 20%;
+  max-width: 70%;
+  z-index: 110;
+  @include desktop {
+    top: 16%;
+    left: 36%;
+    max-width: 50%;
+    width: 28%;
+    min-width: 320px;
+    max-width: 100%;
+  }
+}
 
 .hero_logoBack {
+  width: 93%;
   position: absolute;
-  top: 15%;
-  left: 32%;
-  max-width: 50%;
-  z-index: 9999;
+  top: 11%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 93%;
+  z-index: 100;
   @include desktop {
+    top: 11%;
+    max-width: 50%;
+    width: 38%;
     max-width: 100%;
   }
 }
 
 .hero_leftTop {
+  display: none;
   position: absolute;
   top: 10%;
   left: 12%;
   max-width: 50%;
-  z-index: -9999;
+  z-index: 90;
   @include desktop {
+    top: 8%;
+    display: block;
     max-width: 100%;
   }
 }
 
 .hero_leftBottom {
+  display: none;
   position: absolute;
   top: 43%;
   left: 11%;
   max-width: 50%;
-  z-index: -9999;
+  z-index: 90;
   @include desktop {
+    top: 41%;
+    display: block;
     max-width: 100%;
   }
 }
 .hero_rightTop {
+  display: none;
   position: absolute;
   top: 11%;
   right: 9%;
   max-width: 50%;
-  z-index: -9999;
+  z-index: 90;
   @include desktop {
+    top: 9%;
+    display: block;
     max-width: 100%;
   }
 }
 .hero_rightBottom {
+  display: none;
   position: absolute;
   top: 43%;
   right: 17%;
   max-width: 50%;
-  z-index: -9999;
+  z-index: 90;
   @include desktop {
+    top: 41%;
+    display: block;
     max-width: 100%;
+  }
+}
+.line1 {
+  width: 100%;
+  @include desktop {
+    width: 25%;
   }
 }
 </style>

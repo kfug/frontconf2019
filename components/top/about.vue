@@ -1,10 +1,10 @@
 <template>
   <section>
     <div class="p-about">
-      <img src="~/assets/img/dec_frame01.png" class="img1" alt="logo" />
-      <img src="~/assets/img/dec_frame01.png" class="img2" alt="logo" />
-      <img src="~/assets/img/about1.png" class="about1" alt="logo" />
-      <img src="~/assets/img/about2.png" class="about2" alt="logo" />
+      <img src="~/assets/img/dec_frame01.png" class="img1" />
+      <img src="~/assets/img/dec_frame01.png" class="img2" />
+      <img src="~/assets/img/about1.png" class="about1" />
+      <img src="~/assets/img/about2.png" class="about2" />
       <div class="p-container">
         <div class="l-aboutBox">
           <h1>About Frontend Conference 2019</h1>
@@ -33,36 +33,42 @@
   position: relative;
 }
 .img1 {
-  zoom: 0.5;
+  width: 70%;
   position: absolute;
   left: 0px;
   top: 0px;
-  z-index: -9999999;
+  z-index: 50;
+  @include desktop {
+    width: 20%;
+  }
 }
 .img2 {
+  width: 70%;
   transform: scale(-1, -1);
   filter: FlipH FlipV;
-  zoom: 0.5;
   position: absolute;
   right: 0px;
   bottom: 0px;
-  z-index: -9999999;
+  z-index: 50;
+  @include desktop {
+    width: 20%;
+  }
 }
 
 .about1 {
-  zoom: 0.5;
+  width: 20%;
   position: absolute;
   right: 40%;
   top: 2%;
-  z-index: -9999999;
+  z-index: 100;
 }
 
 .about2 {
-  zoom: 0.5;
+  width: 20%;
   position: absolute;
-  left: 2%;
+  left: 5%;
   bottom: 0%;
-  z-index: -9999999;
+  z-index: 80;
   max-width: 80%;
   @include desktop {
     max-width: 100%;
@@ -75,6 +81,8 @@
   padding: 40px 30px;
   margin: 50px 0px 90px 0px;
   text-align: center;
+  position: relative;
+  z-index: 10000000;
   @include desktop {
     padding: 80px 115px;
     max-width: 100%;

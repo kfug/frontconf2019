@@ -8,11 +8,16 @@
 
 @mixin c-heading() {
   color: $clr_baseText2;
-  font-size: 3.8rem;
+  font-size: 3.3rem;
   font-family: Offside;
   font-weight: normal;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 30px;
   @include desktop {
+    padding-top: 0px;
     font-size: 4.7rem;
+    padding-left: 0px;
   }
 }
 
@@ -47,7 +52,7 @@
   border-radius: 9999px;
   padding: 10px 8px;
   min-width: 220px;
-  margin: 1rem;
+  margin-bottom: 50px;
   text-decoration: none;
   text-align: center;
   color: white;
