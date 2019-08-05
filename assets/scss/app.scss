@@ -1,0 +1,52 @@
+@import '~/assets/scss/_library.scss';
+// @import '~~/node_modules/bootstrap/dist/css/bootstrap.css';　bootstrapいれれん
+
+:root {
+  font-size: 62.5%; /*base10px*/
+  font-family: 'Noto Sans CJK JP', YuGothic, 'Yu Gothic', 'メイリオ',
+    'Hiragino Sans', 'ヒラギノ角ゴシック', Meiryo, 'ＭＳ Ｐゴシック',
+    'MS PGothic', sans-serif;
+  color: $clr_baseText1;
+}
+
+html {
+  background: white;
+}
+
+body,
+html,
+main {
+  height: 100%;
+}
+
+* {
+  color: inherit;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  @include desktop {
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  color: #444a64;
+}
+.p-container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.c-container {
+  margin: 0 auto;
+  max-width: 980px;
+}

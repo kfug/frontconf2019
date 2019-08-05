@@ -1,0 +1,80 @@
+@import '~/assets/scss/library/_variable.scss';
+
+@mixin desktop() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin c-heading() {
+  color: $clr_baseText2;
+  font-size: 3.8rem;
+  font-family: Offside;
+  font-weight: normal;
+  @include desktop {
+    font-size: 4.7rem;
+  }
+}
+
+@mixin c-footerBtn() {
+  display: inline-block;
+  border-radius: 9999px;
+  font-weight: bold;
+  color: white;
+  border: solid 1px white;
+  border-radius: 100px;
+  padding: 10px 37px;
+  margin: 10px;
+  text-decoration: none;
+  min-width: 280px;
+  display: inline-block;
+
+  @include desktop {
+    min-width: 265px;
+    font-weight: normal;
+  }
+  span {
+    position: relative;
+  }
+  & i {
+    color: white;
+    margin-right: 15px;
+  }
+}
+
+@mixin c-btn() {
+  display: inline-block;
+  border-radius: 9999px;
+  padding: 10px 8px;
+  min-width: 220px;
+  margin: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  background: $clr_bgGradation;
+  transition: all 0.65s ease;
+
+  @include desktop {
+    min-width: 265px;
+    font-weight: normal;
+  }
+  span {
+    position: relative;
+  }
+  &:hover,
+  &:focus {
+    color: white;
+    outline: none;
+    i {
+      color: white;
+    }
+    &:before {
+      width: 300px;
+      height: 300px;
+      opacity: 1;
+    }
+  }
+}
