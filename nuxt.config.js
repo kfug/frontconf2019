@@ -1,3 +1,5 @@
+import createMeta from './service/meta';
+
 export default {
   mode: 'universal',
   /*
