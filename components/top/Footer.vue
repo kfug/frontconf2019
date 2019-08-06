@@ -7,10 +7,10 @@
           フォローやお知らせの設定ぜひお願いいたします。
         </p>
         <div class="p-buttons">
-          <a href="https://twitter.com/frontkansai" class="button">
+          <a href="https://twitter.com/frontkansai" class="button" target="_blank">
             <i class="fab fa-twitter"></i>twitterアカウント
           </a>
-          <a href="https://www.facebook.com/frontconf2018" class="button">
+          <a href="https://www.facebook.com/frontconf2018" class="button" target="_blank">
             <i class="fab fa-facebook-f"></i>facebookアカウント
           </a>
         </div>
