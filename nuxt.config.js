@@ -1,3 +1,5 @@
+import createMeta from './service/meta';
+
 export default {
   mode: 'universal',
   /*
@@ -13,6 +15,7 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || '',
       },
+      ...createMeta(),
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
