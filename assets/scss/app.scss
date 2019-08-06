@@ -1,0 +1,50 @@
+@import '~/assets/scss/_library.scss';
+// bootstrapインストールする
+
+:root {
+  font-size: 62.5%; /*base10px*/
+  font-family: 'Noto Sans CJK JP', YuGothic, 'Yu Gothic', 'メイリオ',
+    'Hiragino Sans', 'ヒラギノ角ゴシック', Meiryo, 'ＭＳ Ｐゴシック',
+    'MS PGothic', sans-serif;
+  color: $clr_baseText1;
+}
+
+html {
+  // 2000pxまでwidthを広げても画面崩れないように修正
+  max-width: 1700px;
+  margin: 0 auto;
+  background: white;
+}
+
+body,
+html,
+main {
+  height: 100%;
+}
+
+* {
+  color: inherit;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  @include desktop {
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  color: #2f6ee5;
+}
+.p-container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
