@@ -88,7 +88,7 @@ img {
   z-index: 110;
   @include desktop {
     top: 16%;
-    left: 35%;
+    left: 36%;
     max-width: 50%;
     width: 28%;
     min-width: 320px;
