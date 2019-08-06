@@ -1,28 +1,13 @@
 <template>
-    <div>
-<div class="App">
+  <div>
+    <div class="App">
       <header class="App-header">
-        <img src="~/assets/img/kfuglogo.png" class="App-logo" alt="logo" />
-        <p>
-            frontend conference, 2019 Nov.02 @Grandfront Osaka
-        </p>
-         <a
-          class="App-link"
-          href="https://forms.gle/YGM3jCezsgNJP9K99"
-          rel=""
-        >
-        call for paper
-        </a>
-        <a
-          class="App-link"
-          href="https://forms.gle/HLwBDwm8Wf1Pyd177"
-          rel=""
-        >
-         sponsor
-        </a>
+        <p>frontend conference, 2019 Nov.02 @Grandfront Osaka</p>
+        <a class="App-link" href="https://forms.gle/YGM3jCezsgNJP9K99" rel>call for paper</a>
+        <a class="App-link" href="https://forms.gle/HLwBDwm8Wf1Pyd177" rel>sponsor</a>
       </header>
     </div>
-    </div>
+  </div>
 </template>
 
 <script>
@@ -42,7 +27,7 @@ body {
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  margin-top:60px;
+  margin-top: 60px;
   height: 30vmin;
   pointer-events: none;
   padding: 5vmin;
@@ -58,11 +43,11 @@ body {
   color: white;
 }
 .App-header p {
-  margin:65px 0px 25px 0px;
+  margin: 65px 0px 25px 0px;
 }
 
 .App-link {
   color: #61dafb;
-  margin-bottom:10px;
-  }
+  margin-bottom: 10px;
+}
 </style>
