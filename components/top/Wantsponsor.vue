@@ -2,7 +2,7 @@
   <section>
     <div class="p-wantspeaker">
       <div class="box"></div>
-      <img src="~/assets/img/about1.png" class="about1" />
+      <img src="~/assets/img/circle_02.png" class="circle_02" />
       <img src="~/assets/img/wantsponsor_bg1.png" class="wantspeaker_bg1" />
       <div class="p-container">
         <div class="l-wantspeaker_Box2">
@@ -53,20 +53,19 @@ img {
     margin: 90px 0px 200px 0px;
   }
   & h1 {
-    & img {
+    & .circle_01 {
       position: absolute;
-      left: -25px;
-      top: 14px;
+      top: 31px;
+      z-index: -1;
       left: 10px;
-      z-index: -9999;
-      width: 30%;
+      max-width: 33%;
       @include desktop {
-        width: 15%;
-        left: -90px;
-        top: -15px;
+        width: 12%;
+        left: -47px;
+        top: -9px;
       }
     }
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     z-index: 999999;
     position: relative;
     @include c-heading;
@@ -76,10 +75,10 @@ img {
     font-size: 1.5rem;
     padding-bottom: 30px;
     z-index: 999999;
-    padding: 0px 10px 30px 10px;
+    padding: 0px 15px 30px 15px;
     @include desktop {
       font-size: 2rem;
-      padding-bottom: 90px;
+      padding: 0px 0px 80px 0px;
     }
   }
   & a {
@@ -91,7 +90,7 @@ img {
 .wantspeaker_bg1 {
   position: absolute;
   top: 55%;
-  right: 3%;
+  right: 0%;
   max-width: 80%;
   z-index: -1;
   width: 70%;
@@ -101,10 +100,10 @@ img {
   }
 }
 
-.about1 {
+.circle_02 {
   width: 10%;
   position: absolute;
-  left: 20%;
+  left: 15%;
   bottom: 2%;
   max-width: 40%;
   width: 30%;

@@ -34,8 +34,8 @@
     display: inline-block;
     font-size: 1.8rem;
     max-width: 655px;
-    margin-bottom: 53px;
     margin-top: 50px;
+    margin-bottom: 53px;
   }
 }
 

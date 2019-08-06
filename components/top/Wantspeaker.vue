@@ -2,8 +2,8 @@
   <section>
     <div class="p-wantspeaker">
       <div class="box"></div>
-      <img src="~/assets/img/about1.png" class="about1" />
-      <img src="~/assets/img/about2.png" class="about2" />
+      <img src="~/assets/img/circle_02.png" class="circle_02" />
+      <img src="~/assets/img/circle_03.png" class="circle_03" />
       <img src="~/assets/img/wantspeaker_bg1.png" class="wantspeaker_bg1" />
       <div class="p-container">
         <div class="l-wantspeaker_Box2">
@@ -53,30 +53,30 @@ img {
     margin: 20px 0px 270px 0px;
   }
   & h1 {
-    & img {
+    & .circle_01 {
       position: absolute;
-      top: 14px;
+      top: 31px;
       z-index: -1;
       left: 10px;
-      width: 30%;
+      max-width: 33%;
       @include desktop {
-        width: 20%;
-        left: -90px;
-        top: -15px;
+        width: 16%;
+        left: -50px;
+        top: -6px;
       }
     }
     z-index: 1000;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     @include c-heading;
   }
   & p {
     position: relative;
     font-size: 1.5rem;
     z-index: 9999;
-    padding: 0px 10px 30px 10px;
+    padding: 0px 15px 30px 15px;
     @include desktop {
       font-size: 2rem;
-      padding-bottom: 90px;
+      padding: 0px 0px 80px 0px;
     }
   }
   & a {
@@ -86,32 +86,31 @@ img {
 }
 .wantspeaker_bg1 {
   position: absolute;
-  top: 46%;
-  left: 9%;
+  top: 60%;
+  left: 0%;
   max-width: 80%;
   z-index: -1;
-  zoom: 0.3;
+  width: 50%;
   @include desktop {
-    zoom: 0.5;
+    width: 20%;
     z-index: 10;
     max-width: 100%;
   }
 }
 
-.about1 {
-  width: 10%;
+.circle_02 {
   position: absolute;
-  right: 10%;
+  right: 5%;
   top: 5%;
   z-index: 100;
-  width: 30%;
+  width: 25%;
   @include desktop {
     top: 2%;
     width: 13%;
   }
 }
 
-.about2 {
+.circle_03 {
   width: 45%;
   position: absolute;
   right: 30%;

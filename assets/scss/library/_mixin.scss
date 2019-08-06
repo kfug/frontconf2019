@@ -12,34 +12,28 @@
   font-family: Offside;
   font-weight: normal;
   position: relative;
-  padding-left: 20px;
-  padding-top: 30px;
+  padding-top: 40px;
+  padding-left: 40px;
   @include desktop {
     padding-top: 0px;
-    font-size: 4.7rem;
     padding-left: 0px;
+    font-size: 4.7rem;
   }
 }
 
 @mixin c-footerBtn() {
   display: inline-block;
-  border-radius: 9999px;
+  border-radius: 100px;
   font-weight: bold;
   color: white;
   border: solid 1px white;
-  border-radius: 100px;
   padding: 10px 37px;
   margin: 10px;
   text-decoration: none;
   min-width: 280px;
-  display: inline-block;
-
   @include desktop {
     min-width: 265px;
     font-weight: normal;
-  }
-  span {
-    position: relative;
   }
   & i {
     color: white;
@@ -52,6 +46,7 @@
   border-radius: 9999px;
   padding: 10px 8px;
   min-width: 220px;
+  margin-left: 18px;
   margin-bottom: 50px;
   text-decoration: none;
   text-align: center;
@@ -61,25 +56,9 @@
   overflow: hidden;
   background: $clr_bgGradation;
   transition: all 0.65s ease;
-
   @include desktop {
     min-width: 265px;
+    margin-left: 0px;
     font-weight: normal;
-  }
-  span {
-    position: relative;
-  }
-  &:hover,
-  &:focus {
-    color: white;
-    outline: none;
-    i {
-      color: white;
-    }
-    &:before {
-      width: 300px;
-      height: 300px;
-      opacity: 1;
-    }
   }
 }

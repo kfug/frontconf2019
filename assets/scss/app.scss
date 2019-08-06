@@ -1,5 +1,5 @@
 @import '~/assets/scss/_library.scss';
-// @import '~~/node_modules/bootstrap/dist/css/bootstrap.css';　bootstrapいれれん
+// bootstrapインストールする
 
 :root {
   font-size: 62.5%; /*base10px*/
@@ -10,7 +10,8 @@
 }
 
 html {
-  max-width: 2500px;
+  // 2000pxまでwidthを広げても画面崩れないように修正
+  max-width: 1700px;
   margin: 0 auto;
   background: white;
 }
@@ -20,16 +21,6 @@ html,
 main {
   height: 100%;
 }
-
-// body {
-//   background-color: white;
-// }
-// html {
-//   background-color: $clr_footer;
-// }
-// main {
-//   background-color: white;
-// }
 
 * {
   color: inherit;
@@ -50,15 +41,10 @@ img {
 }
 
 a {
-  color: #444a64;
+  color: #2f6ee5;
 }
 .p-container {
   padding: 0 20px;
-  margin: 0 auto;
-  max-width: 980px;
-}
-
-.c-container {
   margin: 0 auto;
   max-width: 980px;
 }

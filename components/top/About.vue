@@ -1,10 +1,10 @@
 <template>
   <section>
     <div class="p-about">
-      <img src="~/assets/img/dec_frame01.png" class="img1" />
-      <img src="~/assets/img/dec_frame01.png" class="img2" />
-      <img src="~/assets/img/about1.png" class="about1" />
-      <img src="~/assets/img/about2.png" class="about2" />
+      <img src="~/assets/img/about_frame01.png" class="img1" />
+      <img src="~/assets/img/about_frame01.png" class="img2" />
+      <img src="~/assets/img/circle_02.png" class="img3" />
+      <img src="~/assets/img/circle_03.png" class="img4" />
       <div class="p-container">
         <div class="l-aboutBox">
           <h1>About Frontend Conference 2019</h1>
@@ -32,48 +32,6 @@
 .p-about {
   position: relative;
 }
-.img1 {
-  width: 70%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 50;
-  @include desktop {
-    width: 20%;
-  }
-}
-.img2 {
-  width: 70%;
-  transform: scale(-1, -1);
-  filter: FlipH FlipV;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  z-index: 50;
-  @include desktop {
-    width: 20%;
-  }
-}
-
-.about1 {
-  width: 20%;
-  position: absolute;
-  right: 40%;
-  top: 2%;
-  z-index: 100;
-}
-
-.about2 {
-  width: 20%;
-  position: absolute;
-  left: 5%;
-  bottom: 0%;
-  z-index: 80;
-  max-width: 80%;
-  @include desktop {
-    max-width: 100%;
-  }
-}
 
 .l-aboutBox {
   display: inline-block;
@@ -82,7 +40,7 @@
   margin: 50px 0px 90px 0px;
   text-align: center;
   position: relative;
-  z-index: 10000000;
+  z-index: 100;
   @include desktop {
     padding: 80px 115px;
     max-width: 100%;
@@ -105,6 +63,55 @@
     @include desktop {
       font-size: 2rem;
     }
+  }
+}
+
+.img1 {
+  width: 50%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 50;
+  @include desktop {
+    width: 20%;
+  }
+}
+.img2 {
+  width: 50%;
+  transform: scale(-1, -1);
+  filter: FlipH FlipV;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 50;
+  @include desktop {
+    width: 20%;
+  }
+}
+
+.img3 {
+  width: 40%;
+  position: absolute;
+  right: 18%;
+  top: 2%;
+  z-index: 100;
+  @include desktop {
+    width: 18%;
+    right: 40%;
+  }
+}
+
+.img4 {
+  width: 43%;
+  position: absolute;
+  left: 7%;
+  bottom: 5%;
+  z-index: 80;
+  max-width: 80%;
+  @include desktop {
+    max-width: 100%;
+    width: 20%;
+    left: 5%;
   }
 }
 </style>

@@ -1,7 +1,11 @@
 <template>
   <section>
     <div class="p-hero">
-      <img src="~/assets/img/logo-white.svg" class="hero_logo" alt="frontend conference 2019" />
+      <img
+        src="~/assets/img/hero_logo-white.svg"
+        class="hero_logoWhite"
+        alt="frontend conference 2019"
+      />
       <img src="~/assets/img/hero_logoBack.png" class="hero_logoBack" />
       <img src="~/assets/img/hero_leftTop.png" class="hero_leftTop" />
       <img src="~/assets/img/hero_leftBottom.png" class="hero_leftBottom" />
@@ -12,7 +16,7 @@
       <h3>グランフロントにて開催決定!</h3>
       <div class="p-announcement">
         <p>登壇者、スポンサー募集中</p>
-        <img src="~/assets/img/deco_line2.png" class="line1" />
+        <img src="~/assets/img/hero_line.png" class="line1" />
       </div>
     </div>
   </section>
@@ -65,26 +69,26 @@ img {
     }
   }
   & .line1 {
-    zoom: 0.5;
+    width: 100%;
     text-align: center;
-    max-width: 70%;
+    max-width: 60%;
     @include desktop {
-      max-width: 100%;
+      width: 25%;
     }
   }
 }
 
-.hero_logo {
+.hero_logoWhite {
   width: 60%;
   min-width: 250px;
   position: absolute;
   top: 17%;
-  left: 20%;
+  left: 19%;
   max-width: 70%;
   z-index: 110;
   @include desktop {
     top: 16%;
-    left: 36%;
+    left: 35%;
     max-width: 50%;
     width: 28%;
     min-width: 320px;
@@ -159,12 +163,6 @@ img {
     top: 41%;
     display: block;
     max-width: 100%;
-  }
-}
-.line1 {
-  width: 100%;
-  @include desktop {
-    width: 25%;
   }
 }
 </style>
