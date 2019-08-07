@@ -1,12 +1,7 @@
 <template>
   <section>
     <div class="p-hero">
-      <img
-        src="~/assets/img/hero_logo-white.svg"
-        class="hero_logoWhite"
-        alt="frontend conference 2019"
-      />
-      <img src="~/assets/img/hero_logoBack.png" class="hero_logoBack" />
+      <img src="~/assets/img/hero_logo.png" class="hero_logo" />
       <img src="~/assets/img/hero_leftTop.png" class="hero_leftTop" />
       <img src="~/assets/img/hero_leftBottom.png" class="hero_leftBottom" />
       <img src="~/assets/img/hero_rightTop.png" class="hero_rightTop" />
@@ -96,7 +91,7 @@ img {
   }
 }
 
-.hero_logoBack {
+.hero_logo {
   width: 93%;
   position: absolute;
   top: 11%;
