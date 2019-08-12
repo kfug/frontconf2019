@@ -23,9 +23,12 @@
 
 <style lang="scss" scoped>
 @import "~/assets/scss/_library.scss";
+
 .p-hero {
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
   max-width: 1300px;
   color: $clr_textLarge;
   position: relative;
@@ -40,6 +43,11 @@
   background-position: left top, left bottom, right top, right bottom;
   background-size: 26%;
   background-repeat: no-repeat;
+
+  @include desktop {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   &_title {
     box-sizing: border-box;
