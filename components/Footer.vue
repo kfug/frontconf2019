@@ -24,10 +24,9 @@
 
 <style lang="scss" scoped>
 @import "~/assets/scss/_library.scss";
-
 .l-footer {
   color: white;
-  background: $clr_footer;
+  background: #444a64;
   text-align: center;
   max-width: 100%;
   & p {

@@ -13,7 +13,7 @@ import PHero from "~/components/top/Hero.vue";
 import PAbout from "~/components/top/About.vue";
 import PWantspeaker from "~/components/top/Wantspeaker.vue";
 import PWantsponsor from "~/components/top/Wantsponsor.vue";
-import LFooter from "~/components/top/Footer.vue";
+import LFooter from "~/components/Footer.vue";
 
 export default {
   components: {

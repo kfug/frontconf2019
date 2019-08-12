@@ -47,7 +47,7 @@
     margin: 90px 0px 200px 0px;
   }
   & h1 {
-    color: $clr_baseText2;
+    color: $clr_textLarge;
     margin-bottom: 25px;
     font-size: 3rem;
     font-family: Offside;
@@ -59,7 +59,7 @@
   }
   & p {
     font-size: 1.5rem;
-    color: $clr_baseText1;
+    color: $clr_textDefault;
     @include desktop {
       font-size: 2rem;
     }
