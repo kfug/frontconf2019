@@ -4,7 +4,7 @@
       <div class="c-container">
         <div class="p-about_intro">
           <h1 class="p-about_secHeading">About Frontend Conference 2019</h1>
-          <p class="p-about_reed">
+          <p class="p-about_read">
             2016 , 2017 , 2018年とたくさんの人に来場頂いた
             関西最大級のフロントエンド製作者向けイベント FRONTEND CONFERENCE が今年も開催されます！
             <br />
@@ -57,7 +57,7 @@
   &_secHeading {
     @include c-secHeading-center;
   }
-  &_reed {
+  &_read {
     line-height: 2;
   }
 }
