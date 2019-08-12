@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="l-footer">
-      <div class="p-container">
+      <div class="c-container">
         <p>
           最新情報はこちらのサイトやTwitter公式アカウント、facebookで配信予定です。
           フォローやお知らせの設定ぜひお願いいたします。

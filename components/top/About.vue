@@ -5,7 +5,7 @@
       <img src="~/assets/img/about_frame01.png" class="img2" />
       <img src="~/assets/img/circle_02.png" class="img3" />
       <img src="~/assets/img/circle_03.png" class="img4" />
-      <div class="p-container">
+      <div class="c-container">
         <div class="l-aboutBox">
           <h1>About Frontend Conference 2019</h1>
           <p>
@@ -30,6 +30,7 @@
 @import "~/assets/scss/_library.scss";
 
 .p-about {
+  margin-top: 100px;
   position: relative;
 }
 

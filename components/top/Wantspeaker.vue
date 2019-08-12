@@ -5,7 +5,7 @@
       <img src="~/assets/img/circle_02.png" class="circle_02" />
       <img src="~/assets/img/circle_03.png" class="circle_03" />
       <img src="~/assets/img/wantspeaker_bg1.png" class="wantspeaker_bg1" />
-      <div class="p-container">
+      <div class="c-container">
         <div class="l-wantspeaker_Box2">
           <h1>
             <img src="~/assets/img/circle_01.png" class="circle_01" />
