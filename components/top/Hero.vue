@@ -76,16 +76,18 @@
       padding-bottom: 60px;
     }
     &Date {
+      display: inline-block;
+      margin-bottom: .6em;
       font-family: Offside;
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: normal;
       @include desktop {
         font-size: 4rem;
       }
     }
     &Place {
-      margin-bottom: 40px;
-      font-size: 2rem;
+      margin-bottom: 1.5em;
+      font-size: 2.3rem;
       font-weight: normal;
       @include desktop {
         font-size: 3.5rem;
