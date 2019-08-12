@@ -20,7 +20,7 @@
 }
 
 @mixin c-secHeading-left {
-  margin-bottom: .8em;
+  margin-bottom: 1em;
   display: inline-block;
   font-size: 3.3rem;
   color: $clr_textLarge;
@@ -86,7 +86,7 @@
   }
 }
 
-@mixin c-btn() {
+@mixin c-btn {
   display: inline-block;
   border-radius: 9999px;
   padding: 10px 8px;
