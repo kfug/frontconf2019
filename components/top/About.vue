@@ -47,7 +47,7 @@
     padding: 40px 30px;
     width: 100%;
     text-align: left;
-    background: $clr_textBordBg;
+    background: $clr_readBordBg;
     @include desktop {
       margin: 110px 0 200px;
       padding: 80px 120px;
