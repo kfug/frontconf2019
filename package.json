@@ -1,8 +1,8 @@
 {
-  "name": "frontconf2019",
+  "name": "FRONTEND CONFERENCE 2019",
   "version": "1.0.0",
-  "description": "My glorious Nuxt.js project",
-  "author": "ririko",
+  "description": "FRONTEND CONFERENCE 2019",
+  "author": "KFUG",
   "private": true,
   "scripts": {
     "dev": "nuxt",
