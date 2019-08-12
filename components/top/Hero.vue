@@ -14,10 +14,6 @@
           </p>
         </div>
       </div>
-      <!--<img src="~/assets/img/hero_leftTop.png" class="hero_leftTop" />-->
-      <!--<img src="~/assets/img/hero_leftBottom.png" class="hero_leftBottom" />-->
-      <!--<img src="~/assets/img/hero_rightTop.png" class="hero_rightTop" />-->
-      <!--<img src="~/assets/img/hero_rightBottom.png" class="hero_rightBottom" />-->
     </div>
   </section>
 </template>
@@ -28,9 +24,22 @@
 <style lang="scss" scoped>
 @import "~/assets/scss/_library.scss";
 .p-hero {
+  margin: 0 auto;
+  display: block;
+  max-width: 1300px;
   color: $clr_textLarge;
   position: relative;
   text-align: center;
+
+  background-image:
+  url("~assets/img/hero_leftTop.png"),
+  url("~assets/img/hero_leftBottom.png"),
+  url("~assets/img/hero_rightTop.png"),
+  url("~assets/img/hero_rightBottom.png");
+
+  background-position: left top, left bottom, right top, right bottom;
+  background-size: 26%;
+  background-repeat: no-repeat;
 
   &_title {
     box-sizing: border-box;
@@ -44,7 +53,7 @@
     background-repeat: no-repeat;
 
     @include desktop {
-      min-width: 400px;
+      min-width: 600px;
     }
 
     &Logo {
@@ -55,8 +64,8 @@
 
   &_info {
     @include desktop {
-      padding-top: 20px;
-      padding-bottom: 100px;
+      padding-top: 10px;
+      padding-bottom: 60px;
     }
     &Date {
       font-family: Offside;
@@ -67,7 +76,7 @@
       }
     }
     &Place {
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       font-size: 2rem;
       font-weight: normal;
       @include desktop {
@@ -93,80 +102,8 @@
         background-size: cover;
       }
     }
-
-
   }
 
-}
-
-.hero_logoBack {
-  width: 93%;
-  position: absolute;
-  top: 11%;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 93%;
-  z-index: 100;
-  @include desktop {
-    top: 11%;
-    max-width: 50%;
-    width: 38%;
-    max-width: 100%;
-  }
-}
-
-.hero_leftTop {
-  display: none;
-  position: absolute;
-  top: 10%;
-  left: 12%;
-  max-width: 50%;
-  z-index: 90;
-  @include desktop {
-    top: 8%;
-    display: block;
-    max-width: 100%;
-  }
-}
-
-.hero_leftBottom {
-  display: none;
-  position: absolute;
-  top: 43%;
-  left: 11%;
-  max-width: 50%;
-  z-index: 90;
-  @include desktop {
-    top: 41%;
-    display: block;
-    max-width: 100%;
-  }
-}
-.hero_rightTop {
-  display: none;
-  position: absolute;
-  top: 11%;
-  right: 9%;
-  max-width: 50%;
-  z-index: 90;
-  @include desktop {
-    top: 9%;
-    display: block;
-    max-width: 100%;
-  }
-}
-.hero_rightBottom {
-  display: none;
-  position: absolute;
-  top: 43%;
-  right: 17%;
-  max-width: 50%;
-  z-index: 90;
-  @include desktop {
-    top: 41%;
-    display: block;
-    max-width: 100%;
-  }
 }
 </style>
 
