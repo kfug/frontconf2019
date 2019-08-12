@@ -6,7 +6,7 @@
   }
 }
 
-@mixin c-heading-center {
+@mixin c-secHeading-center {
   display: block;
   margin-bottom: .8em;
   font-size: 3.3rem;
@@ -14,6 +14,38 @@
   font-family: Offside;
   font-weight: normal;
   text-align: center;
+  @include desktop {
+    font-size: 4rem;
+  }
+}
+
+@mixin c-secHeading-left {
+  margin-bottom: .8em;
+  display: inline-block;
+  font-size: 3.3rem;
+  color: $clr_textLarge;
+  font-family: Offside;
+  font-weight: normal;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background: url("~assets/img/circle_01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -.8em;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+
+
   @include desktop {
     font-size: 4rem;
   }

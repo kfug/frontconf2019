@@ -55,7 +55,7 @@
     }
   }
   &_secHeading {
-    @include c-heading-center;
+    @include c-secHeading-center;
   }
   &_reed {
     line-height: 2;
