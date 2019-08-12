@@ -6,6 +6,19 @@
   }
 }
 
+@mixin c-heading-center {
+  display: block;
+  margin-bottom: .8em;
+  font-size: 3.3rem;
+  color: $clr_textLarge;
+  font-family: Offside;
+  font-weight: normal;
+  text-align: center;
+  @include desktop {
+    font-size: 4rem;
+  }
+}
+
 @mixin c-heading() {
   color: $clr_textLarge;
   font-size: 3.3rem;
@@ -17,7 +30,7 @@
   @include desktop {
     padding-top: 0px;
     padding-left: 0px;
-    font-size: 4.7rem;
+    font-size: 4rem;
   }
 }
 
