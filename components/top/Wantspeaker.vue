@@ -18,14 +18,8 @@
           </div>
         </div>
       </div>
-      <div class="box"></div>
       <!--<img src="~assets/img/circle_02.png" class="circle_02" />-->
       <!--<img src="~assets/img/circle_03.png" class="circle_03" />-->
-      <div class="c-container">
-        <div class="l-wantspeaker_Box2">
-
-        </div>
-      </div>
     </div>
   </section>
 </template>
@@ -37,23 +31,40 @@
 @import "~/assets/scss/_library.scss";
 
 .p-wantSpeaker {
-  background: linear-gradient(90deg, white 0%, white 50%, $clr_readBordBg 50%, $clr_readBordBg 100%);
+  padding-top: 150px;
+  background-image: url("~assets/img/wantspeaker_bg1.png");
+  background-repeat: no-repeat;
+  background-size: 38vw;
+  background-position: 20px 0;
+
+  @include desktop {
+    padding-top: 0;
+    background: linear-gradient(90deg, white 0%, white 50%, $clr_readBordBg 50%, $clr_readBordBg 100%);
+  }
+
 
   &_back {
-    background-image: url("~assets/img/wantspeaker_bg1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 15vw;//調整途中
+    background: $clr_readBordBg;
+
+    @include desktop {
+      background: transparent;
+      background-image: url("~assets/img/wantspeaker_bg1.png");
+      background-repeat: no-repeat;
+      background-size: 23vw;
+      background-position: calc( 100% / 2 - 35vw) 50%;
+    }
+
 
   }
 
 
   &_content {
-    margin-left: 20%;
+    margin-left: 0;
     padding: $padding_readBordSP;
 
     background: $clr_readBordBg;
     @include desktop {
+      margin-left: 20%;
       padding: $padding_readBordPC;
     }
 
@@ -64,7 +75,7 @@
   }
 
   &_read {
-    /*line-height: 2;*/
+    margin-bottom: 3em;
   }
 
   &_btn {
