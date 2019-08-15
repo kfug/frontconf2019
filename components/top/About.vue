@@ -33,12 +33,13 @@
           url("~assets/img/circle_02.png"),
           url("~assets/img/circle_03.png");
 
-  background-size: 15%, 15%, 15%, 18%;
+  background-size: 15%, 15%, 30%, 30%;
   background-position: left top, right bottom, 45% 0%, 50% 100%;
   background-repeat: no-repeat;
 
   @include desktop {
     margin-top: 100px;
+    background-size: 15%, 15%, 15%, 18%;
   }
 
   &_intro {
