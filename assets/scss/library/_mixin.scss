@@ -10,12 +10,14 @@
   display: block;
   margin-bottom: .8em;
   font-size: 3.3rem;
+  line-height: 1.5;
   color: $clr_textLarge;
   font-family: Offside;
   font-weight: normal;
-  text-align: center;
+  text-align: left;
   @include desktop {
     font-size: 4rem;
+    text-align: center;
   }
 }
 

@@ -56,6 +56,7 @@
   }
   &_secHeading {
     @include c-secHeading-center;
+
   }
   &_read {
     line-height: 2;
