@@ -1,10 +1,12 @@
 <template>
   <main>
-    <p-hero></p-hero>
-    <p-about></p-about>
-    <p-wantspeaker></p-wantspeaker>
-    <p-wantsponsor></p-wantsponsor>
-    <L-footer></L-footer>
+    <div class="l-contentWrap">
+      <p-hero></p-hero>
+      <p-about></p-about>
+      <p-wantspeaker></p-wantspeaker>
+      <p-wantsponsor></p-wantsponsor>
+      <L-footer></L-footer>
+    </div>
   </main>
 </template>
 
@@ -28,6 +30,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/scss/_library.scss";
+
+  .l-contentWrap {
+    background: white;
+  }
 
 </style>
 
