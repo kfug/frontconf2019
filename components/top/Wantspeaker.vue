@@ -18,8 +18,6 @@
           </div>
         </div>
       </div>
-      <!--<img src="~assets/img/circle_02.png" class="circle_02" />-->
-      <!--<img src="~assets/img/circle_03.png" class="circle_03" />-->
     </div>
   </section>
 </template>
@@ -35,7 +33,7 @@
   background-image: url("~assets/img/wantspeaker_bg1.png");
   background-repeat: no-repeat;
   background-size: 38vw;
-  background-position: 20px 0;
+  background-position: 20% 0;
 
   @include desktop {
     padding-top: 0;
