@@ -68,26 +68,6 @@
   }
 }
 
-@mixin c-footerBtn() {
-  display: inline-block;
-  border-radius: 100px;
-  font-weight: bold;
-  color: white;
-  border: solid 1px white;
-  padding: 10px 37px;
-  margin: 10px;
-  text-decoration: none;
-  min-width: 280px;
-  @include desktop {
-    min-width: 265px;
-    font-weight: normal;
-  }
-  & i {
-    color: white;
-    margin-right: 15px;
-  }
-}
-
 @mixin c-btn {
   display: inline-block;
   border-radius: 9999px;
