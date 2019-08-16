@@ -6,7 +6,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || 'FRONTEND CONFERENCE 2019',
+    title: 'FRONTEND CONFERENCE 2019',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
@@ -19,7 +19,12 @@ export default {
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {
+        rel: `stylesheet`,
+        href: `https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css`,
+        integrity: `sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T`,
+        crossorigin: `anonymous`,
+      },
       {
         rel: `stylesheet`,
         href: `https://fonts.googleapis.com/css?family=Offside&display=swap`,

@@ -1,10 +1,12 @@
 <template>
   <main>
-    <p-hero></p-hero>
-    <p-about></p-about>
-    <p-wantspeaker></p-wantspeaker>
-    <p-wantsponsor></p-wantsponsor>
-    <L-footer></L-footer>
+    <div class="l-contentWrap">
+      <p-hero></p-hero>
+      <p-about></p-about>
+      <p-wantspeaker></p-wantspeaker>
+      <p-wantsponsor></p-wantsponsor>
+      <L-footer></L-footer>
+    </div>
   </main>
 </template>
 
@@ -13,7 +15,7 @@ import PHero from "~/components/top/Hero.vue";
 import PAbout from "~/components/top/About.vue";
 import PWantspeaker from "~/components/top/Wantspeaker.vue";
 import PWantsponsor from "~/components/top/Wantsponsor.vue";
-import LFooter from "~/components/top/Footer.vue";
+import LFooter from "~/components/Footer.vue";
 
 export default {
   components: {
@@ -28,6 +30,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/scss/_library.scss";
+
+  .l-contentWrap {
+    background: white;
+  }
 
 </style>
 

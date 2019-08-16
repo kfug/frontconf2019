@@ -6,8 +6,55 @@
   }
 }
 
+@mixin c-secHeading-center {
+  display: block;
+  margin-bottom: .8em;
+  font-size: 3.3rem;
+  line-height: 1.5;
+  color: $clr_textLarge;
+  font-family: Offside;
+  font-weight: normal;
+  text-align: left;
+  @include desktop {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+
+@mixin c-secHeading-left {
+  margin-bottom: 1em;
+  display: inline-block;
+  font-size: 3.3rem;
+  color: $clr_textLarge;
+  font-family: Offside;
+  font-weight: normal;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background: url("~assets/img/circle_01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -.8em;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+
+
+  @include desktop {
+    font-size: 4rem;
+  }
+}
+
 @mixin c-heading() {
-  color: $clr_baseText2;
+  color: $clr_textLarge;
   font-size: 3.3rem;
   font-family: Offside;
   font-weight: normal;
@@ -17,48 +64,35 @@
   @include desktop {
     padding-top: 0px;
     padding-left: 0px;
-    font-size: 4.7rem;
+    font-size: 4rem;
   }
 }
 
-@mixin c-footerBtn() {
-  display: inline-block;
-  border-radius: 100px;
-  font-weight: bold;
-  color: white;
-  border: solid 1px white;
-  padding: 10px 37px;
-  margin: 10px;
-  text-decoration: none;
-  min-width: 280px;
-  @include desktop {
-    min-width: 265px;
-    font-weight: normal;
-  }
-  & i {
-    color: white;
-    margin-right: 15px;
-  }
-}
-
-@mixin c-btn() {
+@mixin c-btn {
   display: inline-block;
   border-radius: 9999px;
-  padding: 10px 8px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
   min-width: 220px;
-  margin-left: 18px;
-  margin-bottom: 50px;
+  max-width: 100%;
   text-decoration: none;
   text-align: center;
-  color: white;
+  font-size: 1.8rem;
   font-weight: bold;
+  color: white;
   position: relative;
-  overflow: hidden;
   background: $clr_bgGradation;
-  transition: all 0.65s ease;
+  opacity: 1;
+  transition: all .3s ease;
+
+  &:hover {
+    opacity: .5;
+    transition: all .3s ease;
+  }
+
   @include desktop {
-    min-width: 265px;
-    margin-left: 0px;
-    font-weight: normal;
+    min-width: 280px;
+    font-size: 2rem;
+    letter-spacing: .1em;
   }
 }
