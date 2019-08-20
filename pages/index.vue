@@ -7,6 +7,7 @@
       <p-wantsponsor></p-wantsponsor>
       <L-footer></L-footer>
     </div>
+    <p-float-share-button-space class="p-float"></p-float-share-button-space>
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import PAbout from "~/components/top/About.vue";
 import PWantspeaker from "~/components/top/Wantspeaker.vue";
 import PWantsponsor from "~/components/top/Wantsponsor.vue";
 import LFooter from "~/components/Footer.vue";
+import PFloatShareButtonSpace from "~/components/top/FloatShareButtonSpace.vue";
 
 export default {
   components: {
@@ -23,7 +25,8 @@ export default {
     PAbout,
     PWantspeaker,
     PWantsponsor,
-    LFooter
+    LFooter,
+    PFloatShareButtonSpace
   }
 };
 </script>
@@ -34,6 +37,10 @@ export default {
   .l-contentWrap {
     background: white;
   }
-
+  .p-float {
+      z-index: 99;
+      position: sticky;
+      bottom: 0;
+    }
 </style>
 
