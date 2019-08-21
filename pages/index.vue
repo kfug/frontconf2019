@@ -7,7 +7,7 @@
       <p-wantsponsor></p-wantsponsor>
       <L-footer></L-footer>
     </div>
-    <p-float-share-button-space class="p-float"></p-float-share-button-space>
+    <p-sticky-footer class="p-float"></p-sticky-footer>
   </main>
 </template>
 
@@ -17,7 +17,7 @@ import PAbout from "~/components/top/About.vue";
 import PWantspeaker from "~/components/top/Wantspeaker.vue";
 import PWantsponsor from "~/components/top/Wantsponsor.vue";
 import LFooter from "~/components/Footer.vue";
-import PFloatShareButtonSpace from "~/components/top/FloatShareButtonSpace.vue";
+import PStickyFooter from "~/components/top/StickyFooter.vue";
 
 export default {
   components: {
@@ -26,7 +26,7 @@ export default {
     PWantspeaker,
     PWantsponsor,
     LFooter,
-    PFloatShareButtonSpace
+    PStickyFooter
   }
 };
 </script>

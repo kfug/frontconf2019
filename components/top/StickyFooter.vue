@@ -1,13 +1,13 @@
 <template>
-    <div class="p-floatShareButtonSpace">
-        <label class="p-floatShareButtonSpace_share">SHARE</label>
-        <a class="p-floatShareButtonSpace_button" href="https://twitter.com/frontkansai" target="_blank">
-            <div class="p-floatShareButtonSpace_button_twitter">
+    <div class="l-floatShareButtonSpace">
+        <label class="l-floatShareButtonSpace_share">SHARE</label>
+        <a class="l-floatShareButtonSpace_button" href="https://twitter.com/frontkansai" target="_blank">
+            <div class="l-floatShareButtonSpace_button_twitter">
                 <i class="fab fa-twitter" />
             </div>
         </a>
-        <a class = "p-floatShareButtonSpace_button" href="https://www.facebook.com/FRONTCONF2019/" target="_blank">
-            <div class="p-floatShareButtonSpace_button_facebook">
+        <a class = "l-floatShareButtonSpace_button" href="https://www.facebook.com/FRONTCONF2019/" target="_blank">
+            <div class="l-floatShareButtonSpace_button_facebook">
                 <i class="fab fa-facebook-f" />
             </div>
         </a>
@@ -20,7 +20,7 @@
 <style lang="scss" scoped>
 @import "~/assets/scss/_library.scss";
 
-.p-floatShareButtonSpace {
+.l-floatShareButtonSpace {
     background: transparent linear-gradient(180deg,rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)) 0% 0% no-repeat padding-box;
     text-align: center;
 
@@ -48,6 +48,7 @@
             background: #00ACED 0% 0% no-repeat padding-box;
             border-radius: 5px;
             text-align: center;
+            vertical-align: middle;
         }
 
         &_facebook{
@@ -56,6 +57,7 @@
             background: #305097 0% 0% no-repeat padding-box;
             border-radius: 5px;
             text-align: center;
+            vertical-align: middle;
         }
     }
 }
