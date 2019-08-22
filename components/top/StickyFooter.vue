@@ -40,9 +40,10 @@
 
         & i {
                 color: white;
+                font-size: 20px;
             }
         .fab {
-           vertical-align: middle;
+            vertical-align: middle;
         }
 
         &_twitter {
@@ -50,8 +51,8 @@
             height: 35px;
             background: #00ACED 0% 0% no-repeat padding-box;
             border-radius: 5px;
+            display:inline-block;
             text-align: center;
-            vertical-align: middle;
         }
 
         &_facebook{
@@ -59,8 +60,8 @@
             height: 35px;
             background: #305097 0% 0% no-repeat padding-box;
             border-radius: 5px;
+            display:inline-block;
             text-align: center;
-            vertical-align: middle;
         }
     }
 }
