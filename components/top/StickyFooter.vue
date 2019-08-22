@@ -36,11 +36,14 @@
     &_button {
         display: inline-block;
         position: relative;
+        vertical-align: middle;
         padding: 10px 10px;
 
         & i {
                 color: white;
                 font-size: 20px;
+                display: table-cell; 
+                vertical-align: middle;
             }
         .fab {
             vertical-align: middle;
@@ -51,7 +54,7 @@
             height: 35px;
             background: #00ACED 0% 0% no-repeat padding-box;
             border-radius: 5px;
-            display:inline-block;
+            display:table;
             text-align: center;
         }
 
@@ -60,7 +63,7 @@
             height: 35px;
             background: #305097 0% 0% no-repeat padding-box;
             border-radius: 5px;
-            display:inline-block;
+            display:table;
             text-align: center;
         }
     }
