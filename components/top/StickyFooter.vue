@@ -41,6 +41,9 @@
         & i {
                 color: white;
             }
+        .fab {
+           vertical-align: middle;
+        }
 
         &_twitter {
             width: 35px;
