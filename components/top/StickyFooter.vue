@@ -1,12 +1,12 @@
 <template>
     <div class="l-floatShareButtonSpace">
         <label class="l-floatShareButtonSpace_share">SHARE</label>
-        <a class="l-floatShareButtonSpace_button" href="https://twitter.com/frontkansai" target="_blank">
+        <a class="l-floatShareButtonSpace_button" href="https://twitter.com/intent/tweet?text=FRONTEND CONFERENCE 2019｜関西フロントエンドUG https://2019.kfug.jp/&amp;hashtags=frontkansai" target="_blank">
             <div class="l-floatShareButtonSpace_button_twitter">
                 <i class="fab fa-twitter" />
             </div>
         </a>
-        <a class = "l-floatShareButtonSpace_button" href="https://www.facebook.com/FRONTCONF2019/" target="_blank">
+        <a class = "l-floatShareButtonSpace_button" href="https://www.facebook.com/sharer.php?u=https://2019.kfug.jp/&amp;t=FRONTEND CONFERENCE 2019｜関西フロントエンドUG https://2018.kfug.jp/&amp;hashtags=frontkansai" target="_blank">
             <div class="l-floatShareButtonSpace_button_facebook">
                 <i class="fab fa-facebook-f" />
             </div>
