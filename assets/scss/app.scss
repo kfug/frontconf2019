@@ -6,7 +6,7 @@
     'Hiragino Sans', 'ヒラギノ角ゴシック', Meiryo, 'ＭＳ Ｐゴシック',
     'MS PGothic', sans-serif;
   color: $clr_textDefault;
-  background: $clr_navy;
+  background: white;
 }
 
 html {
@@ -38,9 +38,6 @@ img {
   vertical-align: top;
 }
 
-a {
-  color: #2f6ee5;
-}
 .c-container {
   padding: 0 20px;
   margin: 0 auto;

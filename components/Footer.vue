@@ -47,7 +47,7 @@
   }
 
   &_contents {
-    padding: 60px 0;
+    padding: 60px 0 80px;
     color: white;
     text-align: center;
     background: $clr_navy;
