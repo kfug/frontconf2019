@@ -1,12 +1,11 @@
 <template>
   <main>
-    <div class="l-contentWrap">
-      <p-hero></p-hero>
-      <p-about></p-about>
-      <p-wantspeaker></p-wantspeaker>
-      <p-wantsponsor></p-wantsponsor>
-      <L-footer></L-footer>
-    </div>
+    <p-hero></p-hero>
+    <p-about></p-about>
+    <p-wantspeaker></p-wantspeaker>
+    <p-wantsponsor></p-wantsponsor>
+    <L-footer></L-footer>
+    <l-share-footer></l-share-footer>
   </main>
 </template>
 
@@ -16,6 +15,7 @@ import PAbout from "~/components/top/About.vue";
 import PWantspeaker from "~/components/top/Wantspeaker.vue";
 import PWantsponsor from "~/components/top/Wantsponsor.vue";
 import LFooter from "~/components/Footer.vue";
+import LShareFooter from "~/components/top/ShareFooter.vue";
 
 export default {
   components: {
@@ -23,7 +23,8 @@ export default {
     PAbout,
     PWantspeaker,
     PWantsponsor,
-    LFooter
+    LFooter,
+    LShareFooter
   }
 };
 </script>
@@ -31,9 +32,6 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/scss/_library.scss";
 
-  .l-contentWrap {
-    background: white;
-  }
 
 </style>
 
