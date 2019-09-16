@@ -14,7 +14,7 @@
             </p>
             <a class="p-wantSpeaker_btn"
                     href="https://docs.google.com/forms/d/e/1FAIpQLSeczBxHUOA8PIBWj3M-nJzzwcwyegAtjO4sUXgLXBHDUYYnng/viewform" target="_blank"
-            >登壇申し込み</a>
+            >登壇申し込み<i class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
       </div>
@@ -78,6 +78,12 @@
 
   &_btn {
     @include c-btn;
+    
+     i {
+      position: absolute;
+      right: 5%;
+      top:32%;
+    }
   }
 }
 
