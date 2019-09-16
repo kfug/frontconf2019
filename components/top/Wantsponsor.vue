@@ -82,7 +82,7 @@
     i {
       position: absolute;
       right: 5%;
-      top:20%;
+      top:32%;
     }
   }
 }
