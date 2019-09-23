@@ -1,0 +1,29 @@
+sponsors:
+  - name: 株式会社ラクス
+    rank: silver
+    key: SP0301
+    url: https://www.rakus.co.jp/
+  - name: 株式会社タンバリン
+    rank: gold
+    key: SP0201
+    url: https://www.tam-bourine.co.jp/
+  - name: 株式会社ゆめみ
+    rank: platinum
+    key: SP0101
+    url: https://www.yumemi.co.jp/ja
+  - name: 株式会社スマレジ
+    rank: gold
+    key: SP0202
+    url: https://corp.smaregi.jp/
+#  - name: 株式会社リビルド
+#    rank: silver
+#    key: SP0302
+#    url: https://re-build.company/
+  - name: 株式会社CI
+    rank: platinum
+    key: SP0102
+    url: https://creative-innovation.co.jp/
+  - name: Lec Cafe
+    rank: silver
+    key: SP0303
+    url: https://leccafe.connpass.com/
