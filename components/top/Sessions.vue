@@ -1,17 +1,18 @@
 <template>
   <section>
-    <div class="p-about">
-      <div class="c-container">
-        <div class="p-about_intro">
-          <h1 class="p-about_secHeading">Sessions</h1>
-          <p class="p-about_read">
-            2016 , 2017 , 2018年とたくさんの人に来場頂いた
-            関西最大級のフロントエンド製作者向けイベント FRONTEND CONFERENCE が今年も開催されます！
-            <br />
-            例年通り、 デザイナもエンジニアも、職種問わず
-            Webに携わるすべての人が楽しめるイベントとして
-            様々なセッション・企画等を検討中です！
-          </p>
+    <div class="p-sessions">
+      <div class="p-sessions_back">
+        <div class="c-container">
+          <div class="p-sessions_content">
+            <h1 class="p-sessions_secHeading">Sessions</h1>
+            <!-- TODO: PDF -->
+            <p class="p-sessions_read">
+              フロントエンドのエンジニアリングや、マークアップ、デザインなど、
+              Webに関わる全ての人に是非届けたい珠玉のセッション構成でお送りしております
+            </p>
+            <!-- TODO: セッション一覧ページへのリンク貼り替え -->
+            <a class="p-sessions_btn" href=".">セッション一覧</a>
+          </div>
         </div>
       </div>
     </div>
@@ -24,25 +25,23 @@
 <style lang="scss" scoped>
 @import "~/assets/scss/_library.scss";
 
-.p-about {
+.p-sessions {
   margin: 50px auto 0;
   position: relative;
   background-image:
-          url("~assets/img/about_frame01.png"),
-          url("~assets/img/about_frame02.png"),
-          url("~assets/img/circle_02.png"),
-          url("~assets/img/circle_03.png");
+    url("~assets/img/sessions_bg1.png"),
+    url("~assets/img/sessions_bg2.png");
 
-  background-size: 15%, 15%, 30%, 30%;
-  background-position: left top, right bottom, 45% 0%, 50% 100%;
+  background-size: 30%, 30%;
+  background-position: left top, right bottom;
   background-repeat: no-repeat;
 
   @include desktop {
     margin-top: 100px;
-    background-size: 15%, 15%, 15%, 18%;
+    background-size: 25%, 25%;
   }
 
-  &_intro {
+  &_content {
     display: inline-block;
     margin: 50px 0;
     padding: 40px 30px;
@@ -55,12 +54,17 @@
       text-align: center;
     }
   }
-  &_secHeading {
-    @include c-secHeading-center;
 
+  &_secHeading {
+    @include c-secHeading-left;
   }
+
   &_read {
-    line-height: 2;
+    margin-bottom: 3em;
+  }
+
+  &_btn {
+    @include c-btn;
   }
 }
 </style>
