@@ -1,17 +1,37 @@
 <template>
   <section>
-    <div class="p-about">
-      <div class="c-container">
-        <div class="p-about_intro">
-          <h1 class="p-about_secHeading">Sponsors</h1>
-          <p class="p-about_read">
-            2016 , 2017 , 2018年とたくさんの人に来場頂いた
-            関西最大級のフロントエンド製作者向けイベント FRONTEND CONFERENCE が今年も開催されます！
-            <br />
-            例年通り、 デザイナもエンジニアも、職種問わず
-            Webに携わるすべての人が楽しめるイベントとして
-            様々なセッション・企画等を検討中です！
-          </p>
+    <div class="p-sponsors">
+      <div class="p-sponsors_back">
+        <div class="c-container">
+          <div class="p-sponsors_contents">
+            <h1 class="p-sponsors_secHeading">Sponsors</h1>
+            <div class="p-sponsors_diamond">
+              <div class="p-sponsors_diamond_list">
+                <sponsor-item 
+                  class="p-sponsors_diamond_list_item" 
+                  :key=index v-for="(sponsorData, index) in this.diamondSponsorDataList"
+                  :sponsor-data="sponsorData">
+                </sponsor-item>
+              </div>
+            </div>
+            <div class="p-sponsors_gold">
+              <div class="p-sponsors_gold_list">
+                <sponsor-item 
+                  class="p-sponsors_gold_list_item" 
+                  :key=index v-for="(sponsorData, index) in this.goldSponsorDataList"
+                  :sponsor-data="sponsorData">
+                </sponsor-item>
+              </div>
+            </div>
+            <div class="p-sponsors_silver">
+              <div class="p-sponsors_silver_list">
+                <sponsor-item class="p-sponsors_silver_list_item" 
+                  :key=index v-for="(sponsorData, index) in this.silverSponsorDataList" 
+                  :sponsor-data="sponsorData">
+                </sponsor-item>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -19,48 +39,103 @@
 </template>
 
 <script>
-</script>
+import SponsorItem from "./SponsorItem"
+import SponsorData from "~/static/sponsors.json"
+
+export default {
+  components:{
+    SponsorItem
+  },
+  computed: {
+    diamondSponsorDataList(){
+      return SponsorData.diamond.items
+    },
+    goldSponsorDataList(){
+      return SponsorData.gold.items
+    },
+    silverSponsorDataList(){
+      return SponsorData.silver.items
+    }
+  }
+}
+</script> 
 
 <style lang="scss" scoped>
 @import "~/assets/scss/_library.scss";
 
-.p-about {
-  margin: 50px auto 0;
-  position: relative;
-  background-image:
-          url("~assets/img/about_frame01.png"),
-          url("~assets/img/about_frame02.png"),
-          url("~assets/img/circle_02.png"),
-          url("~assets/img/circle_03.png");
-
-  background-size: 15%, 15%, 30%, 30%;
-  background-position: left top, right bottom, 45% 0%, 50% 100%;
-  background-repeat: no-repeat;
+.c-container {
+  max-width: 700px;
+}
+.p-sponsors {
+  text-align: center;
+  padding-top: 60px;
 
   @include desktop {
-    margin-top: 100px;
-    background-size: 15%, 15%, 15%, 18%;
+    padding-top: 100px;
+    background: linear-gradient(90deg, $clr_readBordBg 0%, $clr_readBordBg 100%, white 50%, white 100%);
   }
 
-  &_intro {
-    display: inline-block;
-    margin: 50px 0;
-    padding: 40px 30px;
-    width: 100%;
-    text-align: left;
+  &_back {
     background: $clr_readBordBg;
     @include desktop {
-      margin: 110px 0 200px;
-      padding: 80px 120px;
-      text-align: center;
+      position:relative;
+      background: transparent;
+      background-image: 
+        url("~assets/img/sponsor_bg1.png"),
+        url("~assets/img/sponsor_bg2.png");
+      background-repeat: no-repeat;
+      background-size: 20%, 20%;
+      background-position: 10% 25%, 92% 72%;
+    }
+  }
+  
+  &_diamond {
+    text-align: center;
+    &_list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      &_item {
+        @include desktop {
+          margin: 0 20px 30px;
+          width: calc((100% - 80px)/ 2);
+        }
+      }
+    }
+    
+  }
+
+  &_gold {
+    &_list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      &_item {
+        width: calc((100% - 80px)/ 2);
+        @include desktop {
+          margin: 0 20px 30px;
+          width: calc((100% - 120px)/ 3);
+        }
+      }
+    }
+  }
+
+  &_silver {
+    &_list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      &_item {
+        width: calc((100% - 140px)/ 2);
+        @include desktop {
+          margin: 0 20px 30px;
+          width: calc((100% - 160px)/ 4);
+        }
+      }
     }
   }
   &_secHeading {
-    @include c-secHeading-center;
-
-  }
-  &_read {
-    line-height: 2;
+    @include c-secHeading-left;
   }
 }
 </style>

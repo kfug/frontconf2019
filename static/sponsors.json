@@ -1,0 +1,92 @@
+{
+    "diamond": {
+        "items":[
+            {
+                "name":"A",
+                "sponsorUrl":"https://google.com",
+                "img":"https://placehold.jp/1000x1000.png"
+
+            },
+            {
+                "name":"B",
+                "sponsorUrl":"https://google.com",
+                "img":"https://placehold.jp/1000x1000.png"
+
+            }
+        ]
+    },
+    "gold": {
+        "items":[
+            {
+                "name":"C",
+                "sponsorUrl":"https://google.com",
+                "img":"https://placehold.jp/1000x1000.png"
+
+            },
+            {
+                "name":"D",
+                "sponsorUrl":"https://google.com",
+                "img":"https://placehold.jp/1000x1000.png"
+
+            },
+            {
+                "name":"E",
+                "sponsorUrl":"https://google.com",
+                "img":"https://placehold.jp/1000x1000.png"
+
+            }
+        ]
+    },
+    "silver": {
+        "items":[
+            {
+                "name":"F",
+                "sponsorUrl":"https://google.com",
+                "img":"https://placehold.jp/1000x1000.png"
+
+            },
+            {
+                "name":"G",
+                "url":"https://google.com",
+                "img":"https://placehold.jp/1000x1000.png"
+
+            },
+            {
+                "name":"H",
+                "url":"https://google.com",
+                "img":"https://placehold.jp/1000x1000.png"
+
+            },
+            {
+                "name":"I",
+                "url":"https://google.com",
+                "img":"https://placehold.jp/1000x1000.png"
+
+            },
+            {
+                "name":"F",
+                "sponsorUrl":"https://google.com",
+                "img":"https://placehold.jp/1000x1000.png"
+
+            },
+            {
+                "name":"G",
+                "url":"https://google.com",
+                "img":"https://placehold.jp/1000x1000.png"
+
+            },
+            {
+                "name":"H",
+                "url":"https://google.com",
+                "img":"https://placehold.jp/1000x1000.png"
+
+            },
+            {
+                "name":"I",
+                "url":"https://google.com",
+                "img":"https://placehold.jp/1000x1000.png"
+
+            }
+        ]
+    }
+}
