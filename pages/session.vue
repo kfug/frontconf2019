@@ -1,207 +1,291 @@
 <template>
-    <div class="p-session">
-
+  <div class="p-session">
     <div class="p-header">
-        <a href="#">< TOPに戻る</a>
-        <img src="~assets/img/logo_text-white.svg">
+      <a href="#" class="p-header_pcLink">&lt; TOPに戻る</a>
+      <a href="#" class="p-header_spLink">&lt;</a>
+      <div class="p-header_titleLogo" />
     </div>
-    <div class="p-title">
+    <div class="c-container">
+      <div class="p-title">
         <h1>Sessions</h1>
         <p>フロントエンドのエンジニアリングや、マークアップ、デザインなど、<br> Webに関わる全ての人に是非届けたい珠玉のセッション構成でお送りしております。</p>
-    </div>
-    <div class="p-speaker">
-        <h2>【40文字】作るだけなく、伝え語り合う会社でありたい作るだけなく、伝え語り合う会</h2>
-        <p>【270文字】株式会社 chatbox は大阪の小さなWeb制作会社です。 様々なWeb制作の現場で、 「Webのこれからを語り合う」をテーマにWebの可能性を追求し続けています。 Web制作という 「作る」業務だけでなく、Webの技術を「伝える」「語り合う」会社として、 制作現場での技術 指導や、イベント・セミナーなどの交流活動にも積極的に取り組んでいます。 身の回りにありふ れたWebだからこそ、そこにしか無い、そこだけのWebの形を。 現場と、お客様と、ユーザー と、一緒に考えていくのがchatboxのWeb制作のあり方です。ああああああ</p>
-        <div class="p-people">
-            <p class="img"></p>
-            <div class="p-introduce">
-            　  <h3>田中太郎</h3>
-              　<h4>所属 株式会社chatbox</h4>
-              　<p>【140文字】株式会社 chatbox は大阪の小さなWeb制作会社です。 様々 なWeb制作の現場で、「Webのこれからを語り合う」をテーマにWebの 可能性を追求し続けています。 Web制作という「作る」業務だけでな く、Webの技術を「伝える」「語り合う」会社として、 制作現場。</p>
-                <a href="https://twitter.com" target="_blank"><img src="~assets/img/twitter-brands-1.svg" class="p-twitter"></a>
-                <a href="https://www.facebook.com" target="_blank"><img src="~assets/img/facebook-f-brands-1.svg" class="p-facebook"></a>
-                <a href="#" target="_blank"><img src="~assets/img/link-solid-1.svg"></a>
-            </div>
+      </div>
+      <div class="p-session_bgImg1" />
+      <div class="p-session_bgImg2" />
+      <div class="p-session_card" v-for="(session, index) in sessions" :key="index">
+        <h2 class="p-session_title">{{ session.title }}</h2>
+        <p class="p-session_detail">{{ session.detail }}</p>
+        <div class="p-speaker">
+          <div class="p-speaker_img" />
+          <div class="p-speaker_info">
+      　    <div class="p-speaker_name">{{ session.speaker.name }}</div>
+        　  <div class="p-speaker_company">所属 {{ session.speaker.company }}</div>
+            <p class="p-speaker_detail">{{ session.speaker.detail }}</p>
+            <a :href="session.speaker.twitter" target="_blank">
+              <span class="p-speaker_icon p-twitter" />
+            </a>
+            <a :href="session.speaker.facebook" target="_blank">
+              <span class="p-speaker_icon p-facebook" />
+            </a>
+            <a :href="session.speaker.link" target="_blank">
+              <span class="p-speaker_icon p-linkIcon" />
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="p-button">
+        <router-link to="/" class="p-back">TOPに戻る</router-link>
+      </div>
     </div>
-
-        <p class="p-button"><a href="#" class="p-back">TOPに戻る</a></p>
-
-        <footer>
-            <p>最新情報はこちらのサイトやTwitter公式アカウント、facebookで配信予定です。 フォローやお知らせの設定ぜひお願いいたします</p>
-            <div class="link">
-                <p><a href="https://twitter.com"><img src="~assets/img/twitter-brands-1.svg">twitterアカウント</a></p>
-                <p><a href="https://www.facebook.com"><img src="~assets/img/facebook-f-brands-1.svg">Facebookアカウント</a></p>
-            </div>
-            <p><img src="~assets/img/3f20fdb.png" class="p-footer_img"></p>
-            <div class="p-band">
-                <p>SHARE</p>
-                <a href="https://twitter.com"><img src="~assets/img/twitter-brands.svg"></a>
-                <a href="https://www.facebook.com"><img src="~assets/img/facebook-f-brands.svg"></a>
-            </div>
-        </footer>
-    </div>
+    <l-footer :marginImg="false" />
+    <l-share-footer />
+  </div>
 </template>
 
 <script>
+import LFooter from "~/components/Footer.vue";
+import LShareFooter from "~/components/top/ShareFooter.vue";
 
+const contents = require("json-loader!yaml-loader!~/contents/sessions.yml");
+
+export default {
+  components: {
+    LFooter,
+    LShareFooter
+  },
+  data() {
+    return {
+      sessions: contents.sessions
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-.p-session{
-    background: #F7F7F7 0% 0% no-repeat padding-box;
+@import "~/assets/scss/_library.scss";
+
+.p-session {
+  background: #F7F7F7 0 0 no-repeat padding-box;
+  position: relative;
+  overflow: hidden auto;
 }
+
 h2, h3, h4, p{
-    color: #4B4B4B;
-    letter-spacing: 0;
+  color: #4B4B4B;
+  letter-spacing: 0;
 }
-.p-header{
-    background: transparent linear-gradient(90deg, #1393C6 0%, #5378AA 48%, #C46A49 69%, #DD5530 100%) 0% 0% no-repeat padding-box;
-    position: relative;
-    height: 50px;
-    margin-bottom: 83.6px;
-    & img{
-        margin: auto;
-        padding-top: 15px;
-        display: block;
-        width: 270px;
-    }
 
-    & a{
-        position: absolute;
-        top: 11px;
-        left: 21px;
-        height: 27px;
-        font: 18px/35px Noto Sans CJK JP;
-        letter-spacing: 0.36px;
-        color: #FFFFFF;
+.p-header {
+  background: transparent linear-gradient(90deg, #1393C6 0, #5378AA 48%, #C46A49 69%, #DD5530 100%) 0 0 no-repeat padding-box;
+  position: relative;
+  height: 50px;
+  margin-bottom: 20px;
+  @include desktop() {
+    margin-bottom: 60px;
+  }
+  &_titleLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 20px;
+    background: url("~assets/img/logo_text-white.svg") 0 0 no-repeat;
+  }
+  & a {
+    position: absolute;
+    top: 50%;
+    left: 21px;
+    transform: translateY(-50%);
+    font: 18px/35px Noto Sans CJK JP;
+    letter-spacing: 0.36px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  &_pcLink {
+    display: none;
+    @include desktop() {
+      display: inline-block;
     }
-}
-.p-title{
-    text-align: center;
-    width: 780px;
-    height: 180px;
-    margin: 0 auto 30px;
-    & h1{
-        background: transparent url('~assets/img/circle_01.png') 0% 0% no-repeat padding-box;
-        background-size: contain;
-        font: 47px/59px Offside;
-        width: 223px;
-        margin: 0 auto 30px;
-        padding: 23.5px 0 23.5px 54px;
-        letter-spacing: 0;
-        color: #707070;
-    }
-
-    & p{
-        font: 16px/20px Noto Sans CJK JP;
-        letter-spacing: 0;
-    }
-}
-.p-speaker{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    width: 940px;
-    height: 825px;
-    margin: 0 auto 102px;
-    padding: 80px;
-    & h2{
-        font: Bold 30px/45px Noto Sans CJK JP;
-        margin-bottom: 30px;
-    }
-    & p{
-        font: 18px/32px Noto Sans CJK JP;
-        border-bottom: solid #DEDEDE 1px;
-        padding-bottom: 40px;
-        margin-bottom: 40px;
-    }
-    & p.img{
-        width: 200px;
-        height: 200px;
-        background: #7F828B;
-    }
-
-    & .p-people{
-        display: flex;
-        flex-direction: row;
-        & h3{
-            font: Bold 22px/22px Noto Sans CJK JP;
-            margin-bottom: 10px;
-        }
-        & h4{
-            font: Medium 18px/18px Noto Sans CJK JP;
-            margin-bottom: 20px;
-        }
-        & p{
-            font: 16px/30px Noto Sans CJK JP;
-            border: none;
-            margin-bottom: 37.5px;
-            padding: 0;
-            text-align: left;
-        }
-        & .p-introduce{
-            width: 514px;
-            text-align: left;
-            margin-left: 60px;
-            & img{
-                width: 40px;
-                height: 40px;
-            }
-            & img.p-twitter{
-                margin-right: 20px;
-            }
-            & img.p-facebook{
-                margin-right: 28px;
-            }
-        }
-    }
-}
-a.p-back{
-    text-align: center;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 2px solid #DEDEDE;
+  }
+  &_spLink {
     display: inline-block;
-    line-height: 60px;
-    border-radius: 109px;
-    width: 300px;
-    height: 60px;
-    margin: auto;
+    @include desktop() {
+      display: none;
+    }
+  }
 }
+
+.p-title {
+  text-align: center;
+  margin: 0 auto 30px;
+  & h1 {
+    background: transparent url('~assets/img/circle_01.png') 0 0 no-repeat padding-box;
+    background-size: 60px 60px;
+    font: Regular 24px/30px Offside;
+    width: 114px;
+    padding: 15px 0 15px 30px;
+    margin: 0 auto 20px;
+    letter-spacing: 0;
+    color: #707070;
+    @include desktop() {
+      font: 47px/59px Offside;
+      width: 223px;
+      background-size: contain;
+      padding: 23.5px 0 23.5px 54px;
+      margin: 0 auto 30px;
+    }
+  }
+  & p {
+    font: 16px/20px Noto Sans CJK JP;
+    letter-spacing: 0;
+  }
+}
+
+.p-session_bgImg1 {
+  display: none;
+  @include desktop() {
+    position: absolute;
+    display: block;
+    top: 357px;
+    left: 5%;
+    width: 293px;
+    height: 231px;
+    background: transparent url('~assets/img/sessions_bg1.png') 0 0 no-repeat padding-box;
+  }
+}
+.p-session_bgImg2 {
+  display: none;
+  @include desktop() {
+    position: absolute;
+    display: block;
+    top: 709px;
+    right: 5%;
+    width: 275px;
+    height: 253px;
+    background: transparent url('~assets/img/sessions_bg2.png') 0 0 no-repeat padding-box;
+  }
+}
+
+.p-session {
+  &_card {
+    position: relative;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto 50px;
+    padding: 20px 10px;
+    z-index: 2;
+    @include desktop() {
+      max-width: 940px;
+      margin: 0 auto 50px;
+      padding: 80px;
+    }
+  }
+  &_title {
+    font: Bold 18px/27px Noto Sans CJK JP;
+    margin-bottom: 20px;
+    @include desktop() {
+      font: Bold 30px/45px Noto Sans CJK JP;
+      margin-bottom: 30px;
+    }
+  }
+  &_detail {
+    font: Regular 14px/24px Noto Sans CJK JP;
+    border-bottom: solid #DEDEDE 1px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    @include desktop() {
+      font: 18px/32px Noto Sans CJK JP;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.p-speaker {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  @include desktop() {
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+  &_img {
+    min-width: 150px;
+    height: 150px;
+    background: #707070 0 0 no-repeat padding-box;
+    margin: 0 auto 20px;
+    @include desktop() {
+      min-width: 200px;
+      height: 200px;
+      margin: 0 60px 0 0;
+    }
+  }
+  &_name {
+    font: Bold 18px/22px Noto Sans CJK JP;
+    margin-bottom: 15px;
+    @include desktop() {
+      font: Bold 22px/22px Noto Sans CJK JP;
+      margin-bottom: 10px;
+    }
+  }
+  &_company {
+    font: Regular 14px/22px Noto Sans CJK JP;
+    margin-bottom: 20px;
+    @include desktop() {
+      font: Medium 18px/18px Noto Sans CJK JP;
+    }
+  }
+  &_detail {
+    font: Regular 14px/24px Noto Sans CJK JP;
+    margin-bottom: 30px;
+    text-align: left;
+    @include desktop() {
+      font: 16px/30px Noto Sans CJK JP;
+    }
+  }
+  &_icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background: no-repeat center;
+  }
+}
+
+.p-twitter {
+  background-image: url("~assets/img/twitter-brands-1.svg");
+  margin-right: 35px;
+  @include desktop() {
+    margin-right: 20px;
+  }
+}
+.p-facebook {
+  background-image: url("~assets/img/facebook-f-brands-1.svg");
+  margin-right: 35px;
+  @include desktop() {
+    margin-right: 20px;
+  }
+}
+.p-linkIcon {
+  background-image: url("~assets/img/link-solid-1.svg");
+}
+
 .p-button{
-    text-align: center;
-    margin-bottom: 150px;
+  text-align: center;
+  margin-bottom: 150px;
 }
-footer{
-    background: #444A64 0% 0% no-repeat padding-box;
-    padding-top: 55px;
-    & p{
-        width: 656px;
-        height: 60px;
-        text-align: center;
-        font: 18px/33px Noto Sans CJK JP;
-        letter-spacing: 0;
-        color: #FFFFFF;
-        margin: 0 auto 27px;
-    }
-}
-    .link{
-        display: flex;
-        justify-content: center;
-        width: 580px;
-        margin: 0 auto 20px;
-        & a{
-            display: inline-block;
-            color: white;
-            width: 280px;
-            height: 60px;
-            border: 2px solid #FFFFFF;
-            border-radius: 100px;
-            opacity: 1;
-            margin-bottom: 50px;
-        }
-    }
-.p-band{
-    background: transparent linear-gradient(180deg, #FFFFFF99 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+.p-back{
+  font: Regular 22px/25px Noto Sans CJK JP;
+  color: $clr_textLarge;
+  border-radius: 109px;
+  text-decoration: none;
+  text-align: center;
+  background: #FFFFFF 0 0 no-repeat padding-box;
+  border: 2px solid #DEDEDE;
+  display: inline-block;
+  line-height: 60px;
+  width: 300px;
+  height: 60px;
 }
 </style>
-
-
