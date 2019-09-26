@@ -4,46 +4,18 @@
       <div class="p-staff__intro">
         <h1 class="p-staff__heading">Staff</h1>
         <div class="p-staff__container">
-          <div class="p-staff__member">
-            <a class="p-staff__member--img" href="#"></a>
-            <span class="p-staff__member--name">鈴木一郎</span>
-          </div>
-          <div>
-            <a class="p-staff__member--img" href="#"></a>
-            <span class="p-staff__member--name">鈴木一郎</span>
-          </div>
-          <div>
-            <a class="p-staff__member--img" href="#"></a>
-            <span class="p-staff__member--name">鈴木一郎</span>
-          </div>
-          <div>
-            <a class="p-staff__member--img" href="#"></a>
-            <span class="p-staff__member--name">鈴木一郎</span>
-          </div>
-          <div>
-            <a class="p-staff__member--img" href="#"></a>
-            <span class="p-staff__member--name">鈴木一郎</span>
-          </div>
-          <div>
-            <a class="p-staff__member--img" href="#"></a>
-            <span class="p-staff__member--name">鈴木一郎</span>
-          </div>
-          <div>
-            <a class="p-staff__member--img" href="#"></a>
-            <span class="p-staff__member--name">鈴木一郎</span>
+          <div v-for="(staff, index) in staffs" :key="index" class="p-staff__member">
+            <a class="p-staff__member--img" :style="{ 'background-image' : 'url(' + staff.img + ')' }" href="#"></a>
+            <span class="p-staff__member--name">{{ staff.name }}</span>
           </div>
         </div>
       </div>
       <div class="p-staff__intro">
         <h1 class="p-staff__heading">Designer</h1>
         <div class="p-staff__container">
-          <div class="p-staff__member">
-            <a class="p-staff__member--img" href="#"></a>
-            <span class="p-staff__member--name">鈴木一郎</span>
-          </div>
-          <div class="p-staff__member">
-            <a class="p-staff__member--img" href="#"></a>
-            <span class="p-staff__member--name">鈴木一郎</span>
+          <div v-for="(designer, index) in designers" :key="index" class="p-staff__member">
+            <a class="p-staff__member--img" :style="{ 'background-image' : 'url(' + designer.img + ')' }" href="#"></a>
+            <span class="p-staff__member--name">{{ designer.name }}</span>
           </div>
         </div>
       </div>
@@ -52,9 +24,18 @@
 </template>
 
 <script>
-  export default {
-    name: "Staff.vue"
-  }
+const {staffs, designers} = require("json-loader!yaml-loader!~/contents/staffs.yml");
+
+export default {
+  name: "Staff.vue",
+  data(){
+    return {
+      staffs,
+      designers
+    }
+  },
+  computed: {}
+}
 </script>
 
 <style lang="scss" scoped>

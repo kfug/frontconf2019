@@ -1,0 +1,32 @@
+staffs:
+  - name: 鈴木一郎
+    img: require('~assets/img/ST001.png')
+  - name: 鈴木次郎
+    img: require('~assets/img/ST001.png')
+  - name: 鈴木三郎
+    img: require('~assets/img/ST001.png')
+  - name: スタッフA
+    img: require('~assets/img/ST001.png')
+  - name: スタッフB
+    img: require('~assets/img/ST001.png')
+  - name: スタッフC
+    img: require('~assets/img/ST001.png')
+  - name: スタッフD
+    img: require('~assets/img/ST001.png')
+  - name: スタッフE
+    img: require('~assets/img/ST001.png')
+  - name: スタッフF
+    img: require('~assets/img/ST001.png')
+  - name: スタッフG
+    img: require('~assets/img/ST001.png')
+  - name: スタッフH
+    img: require('~assets/img/ST001.png')
+  - name: スタッフI
+    img: require('~assets/img/ST001.png')
+designers:
+  - name: 鈴木一郎
+    img: require('~assets/img/ST001.png')
+  - name: 鈴木次郎
+    img: require('~assets/img/ST001.png')
+  - name: 鈴木三郎
+    img: require('~assets/img/ST001.png')
