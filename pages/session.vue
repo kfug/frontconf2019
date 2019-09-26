@@ -12,22 +12,22 @@
       </div>
       <div class="p-session_bgImg1" />
       <div class="p-session_bgImg2" />
-      <div class="p-session_card" v-for="(session, index) in sessions" :key="index">
-        <h2 class="p-session_title">{{ session.title }}</h2>
-        <p class="p-session_detail">{{ session.detail }}</p>
+      <div class="p-session_card" v-for="(speaker, index) in speakers" :key="index">
+        <h2 class="p-session_title">{{ speaker.session.title }}</h2>
+        <p class="p-session_detail" v-html="checkNewLineChar(speaker.session.detail)" />
         <div class="p-speaker">
           <div class="p-speaker_img" />
           <div class="p-speaker_info">
-      　    <div class="p-speaker_name">{{ session.speaker.name }}</div>
-        　  <div class="p-speaker_company">所属 {{ session.speaker.company }}</div>
-            <p class="p-speaker_detail">{{ session.speaker.detail }}</p>
-            <a v-if="session.speaker.twitter" :href="session.speaker.twitter" target="_blank">
+      　    <div class="p-speaker_name">{{ speaker.name }}</div>
+        　  <div class="p-speaker_company">所属 {{ speaker.company }}</div>
+            <p class="p-speaker_detail" v-html="checkNewLineChar(speaker.detail)" />
+            <a v-if="speaker.twitter" :href="speaker.twitter" target="_blank">
               <span class="p-speaker_icon p-twitter" />
             </a>
-            <a v-if="session.speaker.facebook" :href="session.speaker.facebook" target="_blank">
+            <a v-if="speaker.facebook" :href="speaker.facebook" target="_blank">
               <span class="p-speaker_icon p-facebook" />
             </a>
-            <a v-if="session.speaker.link" :href="session.speaker.link" target="_blank">
+            <a v-if="speaker.link" :href="speaker.link" target="_blank">
               <span class="p-speaker_icon p-linkIcon" />
             </a>
           </div>
@@ -45,8 +45,7 @@
 <script>
 import LFooter from "~/components/Footer.vue";
 import LShareFooter from "~/components/top/ShareFooter.vue";
-
-const contents = require("json-loader!yaml-loader!~/contents/sessions.yml");
+import { contents } from "~/plugins/speakers"
 
 export default {
   components: {
@@ -55,7 +54,12 @@ export default {
   },
   data() {
     return {
-      sessions: contents.sessions
+      speakers: contents
+    }
+  },
+  methods: {
+    checkNewLineChar(text) {
+       return text.replace(/\n/gm, "<br>");
     }
   }
 }
@@ -122,7 +126,7 @@ h2, h3, h4, p{
   & h1 {
     background: transparent url('~assets/img/circle_01.png') 0 0 no-repeat padding-box;
     background-size: 60px 60px;
-    font: Regular 24px/30px Offside;
+    font: 24px/30px Offside;
     width: 114px;
     padding: 15px 0 15px 30px;
     margin: 0 auto 20px;
