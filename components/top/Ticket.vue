@@ -7,14 +7,24 @@
             Ticket
           </h1>
           <p class="p-ticket__description">
-            チケット販売<br class="p-sp" />
-            開始しました！
+            <span v-if="soldOut">
+              ありがとうございました
+            </span>
+            <span v-else>
+              チケット販売<br class="p-sp" />
+              開始しました！
+            </span>
           </p>
           <a
             class="p-ticket__btn"
             href="#" target="_blank"
           >
-            チケット購入！
+            <span v-if="soldOut">
+              完売しました
+            </span>
+            <span v-else>
+              チケット購入！
+            </span>
           </a>
         </div>
       </div>
@@ -24,7 +34,12 @@
 
 <script>
   export default {
-    name: "Ticket.vue"
+    name: "Ticket.vue",
+    data() {
+      return {
+        soldOut: true
+      }
+    }
   }
 </script>
 
