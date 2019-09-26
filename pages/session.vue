@@ -21,13 +21,13 @@
       　    <div class="p-speaker_name">{{ session.speaker.name }}</div>
         　  <div class="p-speaker_company">所属 {{ session.speaker.company }}</div>
             <p class="p-speaker_detail">{{ session.speaker.detail }}</p>
-            <a :href="session.speaker.twitter" target="_blank">
+            <a v-if="session.speaker.twitter" :href="session.speaker.twitter" target="_blank">
               <span class="p-speaker_icon p-twitter" />
             </a>
-            <a :href="session.speaker.facebook" target="_blank">
+            <a v-if="session.speaker.facebook" :href="session.speaker.facebook" target="_blank">
               <span class="p-speaker_icon p-facebook" />
             </a>
-            <a :href="session.speaker.link" target="_blank">
+            <a v-if="session.speaker.link" :href="session.speaker.link" target="_blank">
               <span class="p-speaker_icon p-linkIcon" />
             </a>
           </div>
