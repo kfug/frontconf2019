@@ -53,27 +53,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   @include desktop {
-    background-size: contain;
+    background-size: cover;
   }
 }
 .p-ticket__container {
-  height: 400px;
-  @include desktop {
-    height: calc(100px + 10vw * 2.5);
-  }
+  height: 350px;
 }
 .p-ticket__heading {
   @include c-secHeading-left;
   margin: 80px auto 40px;
   @include desktop {
-    margin: 50px auto calc(10vw * 0.9 - 70px);
+    margin: 50px auto;
   }
 }
 .p-ticket__description {
   margin-bottom: 30px;
-  @include desktop {
-    margin-bottom: calc(10vw * 0.7 - 60px);
-  }
 }
 .p-ticket__btn {
   position: relative;
