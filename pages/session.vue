@@ -16,7 +16,7 @@
         <h2 class="p-session_title">{{ speaker.session.title }}</h2>
         <p class="p-session_detail" v-html="checkNewLineChar(speaker.session.detail)" />
         <div class="p-speaker">
-          <div class="p-speaker_img" />
+          <div class="p-speaker_img" :style="`background-image: url(${requireImage(speaker.image)})`" />
           <div class="p-speaker_info">
       　    <div class="p-speaker_name">{{ speaker.name }}</div>
         　  <div class="p-speaker_company">所属 {{ speaker.company }}</div>
@@ -45,7 +45,7 @@
 <script>
 import LFooter from "~/components/Footer.vue";
 import LShareFooter from "~/components/top/ShareFooter.vue";
-import { contents } from "~/plugins/speakers"
+import { contents } from "~/contents/speakers/speakers"
 
 export default {
   components: {
@@ -59,7 +59,10 @@ export default {
   },
   methods: {
     checkNewLineChar(text) {
-       return text.replace(/\n/gm, "<br>");
+      return text.replace(/\n/gm, "<br>");
+    },
+    requireImage(imageName) {
+      return require(`~/assets/img/speakers/${imageName}`);
     }
   }
 }
@@ -217,7 +220,8 @@ h2, h3, h4, p{
   &_img {
     min-width: 150px;
     height: 150px;
-    background: #707070 0 0 no-repeat padding-box;
+    background: no-repeat;
+    background-size: contain;
     margin: 0 auto 20px;
     @include desktop() {
       min-width: 200px;
@@ -263,6 +267,9 @@ h2, h3, h4, p{
   @include desktop() {
     margin-right: 20px;
   }
+  &:hover {
+    background-image: url("~assets/img/twitter-brands-2.svg");
+  }
 }
 .p-facebook {
   background-image: url("~assets/img/facebook-f-brands-1.svg");
@@ -270,9 +277,15 @@ h2, h3, h4, p{
   @include desktop() {
     margin-right: 20px;
   }
+  &:hover {
+    background-image: url("~assets/img/facebook-f-brands-2.svg");
+  }
 }
 .p-linkIcon {
   background-image: url("~assets/img/link-solid-1.svg");
+  &:hover {
+    background-image: url("~assets/img/link-solid-2.svg");
+  }
 }
 
 .p-button{
