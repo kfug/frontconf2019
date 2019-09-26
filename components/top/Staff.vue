@@ -5,8 +5,17 @@
         <h1 class="p-staff__heading">Staff</h1>
         <div class="p-staff__container">
           <div v-for="(staff, index) in staffs" :key="index" class="p-staff__member">
-            <a class="p-staff__member--img" :style="{ 'background-image' : 'url(' + staff.img + ')' }" href="#"></a>
-            <span class="p-staff__member--name">{{ staff.name }}</span>
+            <a
+              :href="staff.url ? staff.url : false"
+              class="p-staff__member--link"
+              target="_blank"
+            >
+              <span
+                :style="{ 'background-image' : 'url(' + staff.img + ')' }"
+                class="p-staff__member--img"
+              ></span>
+              <span class="p-staff__member--name">{{ staff.name }}</span>
+            </a>
           </div>
         </div>
       </div>
@@ -14,8 +23,17 @@
         <h1 class="p-staff__heading">Designer</h1>
         <div class="p-staff__container">
           <div v-for="(designer, index) in designers" :key="index" class="p-staff__member">
-            <a class="p-staff__member--img" :style="{ 'background-image' : 'url(' + designer.img + ')' }" href="#"></a>
-            <span class="p-staff__member--name">{{ designer.name }}</span>
+            <a
+              :href="designer.url ? designer.url : false"
+              class="p-staff__member--link"
+              target="_blank"
+            >
+              <span
+                :style="{ 'background-image' : 'url(' + designer.img + ')' }"
+                class="p-staff__member--img"
+              ></span>
+              <span class="p-staff__member--name">{{ designer.name }}</span>
+            </a>
           </div>
         </div>
       </div>
@@ -66,12 +84,12 @@ export default {
     grid-template-columns: repeat(5, 1fr);
   }
 }
-.p-staff__member {
-
+.p-staff__member--link {
+  color: #000;
+  text-decoration: none;
 }
 .p-staff__member--img {
   display: block;
-  background-image: url('~assets/img/ST001.png');
   background-size: contain;
   width: 80px;
   height: 80px;

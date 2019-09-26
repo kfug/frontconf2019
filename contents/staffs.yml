@@ -1,32 +1,47 @@
 staffs:
   - name: 鈴木一郎
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url: /staff1
   - name: 鈴木次郎
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url:
   - name: 鈴木三郎
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url:
   - name: スタッフA
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url: /staffA
   - name: スタッフB
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url: /staffB
   - name: スタッフC
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url: /staffC
   - name: スタッフD
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url: /staffD
   - name: スタッフE
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url:
   - name: スタッフF
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url:
   - name: スタッフG
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url: /staffG
   - name: スタッフH
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url:
   - name: スタッフI
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url:
 designers:
   - name: 鈴木一郎
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url: /designer1
   - name: 鈴木次郎
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url:
   - name: 鈴木三郎
-    img: require('~assets/img/ST001.png')
+    img: /images/staffs/ST001.png
+    url: /designer2
