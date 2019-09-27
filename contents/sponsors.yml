@@ -15,10 +15,10 @@ sponsors:
     rank: gold
     key: SP0202
     url: https://corp.smaregi.jp/
-#  - name: 株式会社リビルド
-#    rank: silver
-#    key: SP0302
-#    url: https://re-build.company/
+  - name: 株式会社リビルド
+    rank: silver
+    key: SP0302
+    url: https://re-build.company/
   - name: 株式会社CI
     rank: platinum
     key: SP0102
@@ -27,3 +27,11 @@ sponsors:
     rank: silver
     key: SP0303
     url: https://leccafe.connpass.com/
+  - name: ベルフェイス株式会社
+    rank: silver
+    key: SP0304
+    url: https://corp.bell-face.com/
+  - name: 株式会社インパス
+    rank: gold
+    key: SP0203
+    url: https://impath.co.jp/
