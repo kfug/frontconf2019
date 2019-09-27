@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="l-footer">
-      <div class="l-footer_margin">
+      <div v-if="marginImg" class="l-footer_margin">
         <img class="l-footer_marginImg" src="~assets/img/circle_02.png">
       </div>
       <div class="l-footer_contents">
@@ -26,6 +26,14 @@
 </template>
 
 <script>
+export default {
+  props: {
+    marginImg: {
+      type: Boolean,
+      default: true
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
