@@ -1,10 +1,11 @@
 <template>
   <div class="p-session">
-    <div class="p-header">
-      <a href="#" class="p-header_pcLink">&lt; TOPに戻る</a>
-      <a href="#" class="p-header_spLink">&lt;</a>
+    <router-link to="/" class="p-header">
+      <router-link to="/" class="p-header_pcLink">&lt; TOPに戻る</router-link>
+      <router-link to="" class="p-header_spLink">&lt
+      </router-link>
       <div class="p-header_titleLogo" />
-    </div>
+    </router-link>
     <div class="c-container">
       <div class="p-title">
         <h1>Sessions</h1>
@@ -85,6 +86,7 @@ h2, h3, h4, p{
 .p-header {
   background: transparent linear-gradient(90deg, #1393C6 0, #5378AA 48%, #C46A49 69%, #DD5530 100%) 0 0 no-repeat padding-box;
   position: relative;
+  display: block;
   height: 50px;
   margin-bottom: 20px;
   @include desktop() {
@@ -181,7 +183,7 @@ h2, h3, h4, p{
     width: auto;
     max-width: 940px;
     margin: 0 auto 50px;
-    padding: 20px 10px;
+    padding: 20px 20px;
     z-index: 2;
     @include desktop() {
       max-width: 940px;
