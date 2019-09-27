@@ -78,12 +78,6 @@
 
   &_btn {
     @include c-btn;
-    
-     i {
-      position: absolute;
-      right: 5%;
-      top:32%;
-    }
   }
 }
 

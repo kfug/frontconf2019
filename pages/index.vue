@@ -2,7 +2,6 @@
   <main>
     <p-hero></p-hero>
     <p-about></p-about>
-    <p-wantspeaker></p-wantspeaker>
     <p-wantsponsor></p-wantsponsor>
     <p-sessions></p-sessions>
     <p-sponsors></p-sponsors>
@@ -14,7 +13,6 @@
 <script>
 import PHero from "~/components/top/Hero.vue";
 import PAbout from "~/components/top/About.vue";
-import PWantspeaker from "~/components/top/Wantspeaker.vue";
 import PWantsponsor from "~/components/top/Wantsponsor.vue";
 import PSessions from "~/components/top/Sessions.vue";
 import PSponsors from "~/components/top/Sponsors.vue";
@@ -25,7 +23,6 @@ export default {
   components: {
     PHero,
     PAbout,
-    PWantspeaker,
     PWantsponsor,
     PSessions,
     PSponsors,

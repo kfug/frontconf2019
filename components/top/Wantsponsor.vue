@@ -13,7 +13,7 @@
             </p>
             <a class="p-wantSponsor_btn"
                href="https://docs.google.com/forms/d/e/1FAIpQLSewyGycmlpy9pkd3Fqp3FtanZopeoY4DTjcuofvdY15BfqDaA/viewform" target="_blank"
-            >スポンサー申込み<i class="fas fa-external-link-alt"></i></a>
+            >スポンサー申込み</a>
           </div>
         </div>
       </div>
@@ -51,8 +51,6 @@
       background-size: 25vw;
       background-position: calc( 100% / 2 + 35vw) 50%;
     }
-
-
   }
 
 
@@ -78,12 +76,7 @@
 
   &_btn {
     @include c-btn;
-
-    i {
-      position: absolute;
-      right: 5%;
-      top:32%;
-    }
+    @include c-btn-pageMove-external;
   }
 }
   
