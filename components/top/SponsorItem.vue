@@ -25,30 +25,34 @@ export default {
     margin: 0 20px 30px;
     display: inline-grid;
     width: 100%;
-    
+
     &_img {
         max-width: 100%;
     }
     &_btn{
+        @include c-btn-pageMove-internal;
         display: inline-block;
+        padding:10px 20px;
         margin-bottom: 20px;
         text-decoration: none;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: bold;
         color: white;
         position: relative;
         background: $clr_bgGradation;
         opacity: 1;
         transition: all .3s ease;
-
+        height: 40px;
+        
         &:hover {
             opacity: .5;
             transition: all .3s ease;
         }
 
         @include desktop {
-            font-size: 1.8rem;
+            padding:5px 20px;
+            font-size: 1.4rem;
             letter-spacing: .1em;
         }
     }

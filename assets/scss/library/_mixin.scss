@@ -96,3 +96,52 @@
     letter-spacing: .1em;
   }
 }
+
+@mixin c-btn-pageMove-external {
+  &::after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 700; 
+    content: "\f35d";
+    display: inline-block;
+    font-size: 1em;
+    font-style: normal;
+    -webkit-font-feature-settings: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    color: #fff;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@mixin c-btn-pageMove-internal {
+  i {
+    position: absolute;
+    right: 5%;
+    top:32%;
+  }
+  &::after{
+    content: "\f054";
+    display: inline-block;
+    font-family: Font Awesome\ 5 Free;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    -webkit-font-feature-settings: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    color: #fff;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}

@@ -126,7 +126,7 @@ export default {
       flex-wrap: wrap;
       justify-content: center;
       &_item {
-        width: calc((100% - 140px)/ 2);
+        width: calc((100% - 135px)/ 2);
         @include desktop {
           margin: 0 20px 30px;
           width: calc((100% - 160px)/ 4);
