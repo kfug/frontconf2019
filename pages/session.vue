@@ -2,7 +2,7 @@
   <div class="p-session">
     <router-link to="/" class="p-header">
       <span class="p-header_pcLink">&lt TOPに戻る</span>
-      <router-link to="" class="p-header_spLink">&lt</router-link>
+      <span to="" class="p-header_spLink">&lt</span>
       <div class="p-header_titleLogo" />
     </router-link>
     <div class="c-container">
@@ -97,7 +97,7 @@ h2, h3, h4, p{
     height: 20px;
     background: url("~assets/img/logo_text-white.svg") 0 0 no-repeat;
   }
-  & a {
+  & span {
     position: absolute;
     top: 50%;
     left: 21px;
