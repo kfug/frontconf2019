@@ -48,13 +48,13 @@ export default {
   },
   computed: {
     diamondSponsorDataList(){
-      return SponsorData.diamond.items
+      return SponsorData.items.filter(el => el.rank === "diamond")
     },
     goldSponsorDataList(){
-      return SponsorData.gold.items
+      return SponsorData.items.filter(el => el.rank === "gold")
     },
     silverSponsorDataList(){
-      return SponsorData.silver.items
+      return SponsorData.items.filter(el => el.rank === "silver")
     }
   }
 }

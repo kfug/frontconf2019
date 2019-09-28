@@ -1,92 +1,109 @@
 {
-    "diamond": {
-        "items":[
-            {
-                "name":"A",
-                "sponsorUrl":"https://google.com",
-                "img":"https://placehold.jp/1000x1000.png"
+    "items":[
+        {
+            "rank": "diamond",
+            "name":"A",
+            "sponsorUrl":"https://google.com",
+            "img":"https://placehold.jp/1000x1000.png",
+            "html":"<h1>hoge</h1><p>jfoaiwjfoaiwefoajofajwefoaijefoiajefo<br>iefjfoajeofiajeofjaejフォイアウェjフォア</p>"
 
-            },
-            {
-                "name":"B",
-                "sponsorUrl":"https://google.com",
-                "img":"https://placehold.jp/1000x1000.png"
+        },
+        {
+            "rank": "diamond",
+            "name":"B",
+            "sponsorUrl":"https://google.com",
+            "img":"https://placehold.jp/1000x1000.png",
+            "html":"<h1>hoge</h1><p>jfoaiwjfoaiwefoajofajwefoaijefoiajefoiefjfoajeofiajeofjaejフォイアウェjフォア</p>"
 
-            }
-        ]
-    },
-    "gold": {
-        "items":[
-            {
-                "name":"C",
-                "sponsorUrl":"https://google.com",
-                "img":"https://placehold.jp/1000x1000.png"
+        },
+        {
+            "rank": "gold",
+            "name":"C",
+            "sponsorUrl":"https://google.com",
+            "img":"https://placehold.jp/1000x1000.png",
+            "html":"<h1>hoge</h1><p>jfoaiwjfoaiwefoajofajwefoaijefoiajefoiefjfoajeofiajeofjaejフォイアウェjフォア</p>"
 
-            },
-            {
-                "name":"D",
-                "sponsorUrl":"https://google.com",
-                "img":"https://placehold.jp/1000x1000.png"
+        },
+        {
+            "rank": "gold",
+            "name":"D",
+            "sponsorUrl":"https://google.com",
+            "img":"https://placehold.jp/1000x1000.png",
+            "html":"<h1>hoge</h1><p>jfoaiwjfoaiwefoajofajwefoaijefoiajefoiefjfoajeofiajeofjaejフォイアウェjフォア</p>"
 
-            },
-            {
-                "name":"E",
-                "sponsorUrl":"https://google.com",
-                "img":"https://placehold.jp/1000x1000.png"
+        },
+        {
+            "rank": "gold",
+            "name":"E",
+            "sponsorUrl":"https://google.com",
+            "img":"https://placehold.jp/1000x1000.png",
+            "html":"<h1>hoge</h1><p>jfoaiwjfoaiwefoajofajwefoaijefoiajefoiefjfoajeofiajeofjaejフォイアウェjフォア</p>"
 
-            }
-        ]
-    },
-    "silver": {
-        "items":[
-            {
-                "name":"F",
-                "sponsorUrl":"https://google.com",
-                "img":"https://placehold.jp/1000x1000.png"
+        },
+        
+        {
+            "rank": "silver",
+            "name":"F",
+            "sponsorUrl":"https://google.com",
+            "img":"https://placehold.jp/1000x1000.png",
+            "html":"<h1>hoge</h1><p>jfoaiwjfoaiwefoajofajwefoaijefoiajefoiefjfoajeofiajeofjaejフォイアウェjフォア</p>"
 
-            },
-            {
-                "name":"G",
-                "url":"https://google.com",
-                "img":"https://placehold.jp/1000x1000.png"
+        },
+        {
+            "rank": "silver",
+            "name":"G",
+            "url":"https://google.com",
+            "img":"https://placehold.jp/1000x1000.png",
+            "html":"<h1>hoge</h1><p>jfoaiwjfoaiwefoajofajwefoaijefoiajefoiefjfoajeofiajeofjaejフォイアウェjフォア</p>"
 
-            },
-            {
-                "name":"H",
-                "url":"https://google.com",
-                "img":"https://placehold.jp/1000x1000.png"
+        },
+        {
+            "rank": "silver",
+            "name":"H",
+            "url":"https://google.com",
+            "img":"https://placehold.jp/1000x1000.png",
+            "html":"<h1>hoge</h1><p>jfoaiwjfoaiwefoajofajwefoaijefoiajefoiefjfoajeofiajeofjaejフォイアウェjフォア</p>"
 
-            },
-            {
-                "name":"I",
-                "url":"https://google.com",
-                "img":"https://placehold.jp/1000x1000.png"
+        },
+        {
+            "rank": "silver",
+            "name":"I",
+            "url":"https://google.com",
+            "img":"https://placehold.jp/1000x1000.png",
+            "html":"<h1>hoge</h1><p>jfoaiwjfoaiwefoajofajwefoaijefoiajefoiefjfoajeofiajeofjaejフォイアウェjフォア</p>"
 
-            },
-            {
-                "name":"F",
-                "sponsorUrl":"https://google.com",
-                "img":"https://placehold.jp/1000x1000.png"
+        },
+        {
+            "rank": "silver",
+            "name":"F",
+            "sponsorUrl":"https://google.com",
+            "img":"https://placehold.jp/1000x1000.png",
+            "html":"<h1>hoge</h1><p>jfoaiwjfoaiwefoajofajwefoaijefoiajefoief<br>jfoajeofiajeofjaejフォイアウェjフォア</p>"
 
-            },
-            {
-                "name":"G",
-                "url":"https://google.com",
-                "img":"https://placehold.jp/1000x1000.png"
+        },
+        {
+            "rank": "silver",
+            "name":"G",
+            "url":"https://google.com",
+            "img":"https://placehold.jp/1000x1000.png",
+            "html":"<h1>hoge</h1><p>jfoaiwjfoaiwefoajofajwefoaijefoiajefoiefjfoajeofiajeofjaejフォイアウェjフォア</p>"
 
-            },
-            {
-                "name":"H",
-                "url":"https://google.com",
-                "img":"https://placehold.jp/1000x1000.png"
+        },
+        {
+            "rank": "silver",
+            "name":"H",
+            "url":"https://google.com",
+            "img":"https://placehold.jp/1000x1000.png",
+            "html":"<h1>hoge</h1><p>jfoaiwjfoaiwefoajofajwefoaijefoiajefoiefjfoajeofiajeofjaejフォイアウェjフォア</p>"
 
-            },
-            {
-                "name":"I",
-                "url":"https://google.com",
-                "img":"https://placehold.jp/1000x1000.png"
+        },
+        {
+            "rank": "silver",
+            "name":"I",
+            "url":"https://google.com",
+            "img":"https://placehold.jp/1000x1000.png",
+            "html":"<h1>hoge</h1><p>jfoaiwjfoaiwefoajofajwefoaijefoiajefoief<br>jfoajeofiajeofjaejフォイアウェjフォア</p>"
 
-            }
-        ]
-    }
+        }
+    ]
 }

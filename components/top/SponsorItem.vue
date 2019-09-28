@@ -1,9 +1,10 @@
 <template>
     <div class="p-sponsors_item">
-        <a href="sponsorData.sponsorUrl" target="_blank" rel="noopener noreferrer">
+        <a :href= "sponsorData.url" target="_blank" rel="noopener noreferrer">
             <img class="p-sponsors_item_img" :src="sponsorData.img" :alt="sponsorData.name">
         </a>
-        <a class="p-sponsors_item_btn" :href='/sponsor/' + sponsorData.name>紹介ページ</a>
+        <nuxt-link class="p-sponsors_item_btn" :to="this.getSponsorDetailPath(sponsorData.name)">紹介ページ</nuxt-link>
+        <!-- <a class="p-sponsors_item_btn" :href=sponsorData.name>紹介ページ</a> -->
     </div>
 </template>
 
@@ -15,6 +16,11 @@ export default {
             type: Object,
             required: true
         }
+    },
+    methods: {
+        getSponsorDetailPath(name) {
+            return "/sponsor/" + name;
+        }   
     }
 }
 </script>

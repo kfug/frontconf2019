@@ -1,28 +1,9 @@
 <template>
-  <section>
-    <div class="l-footer">
-      <div class="l-footer_margin">
-        <img class="l-footer_marginImg" src="~assets/img/circle_02.png">
-      </div>
-      <div class="l-footer_contents">
-        <div class="c-container">
-          <p class="l-footer_intro">
-            最新情報はこちらのサイトやTwitter公式アカウント、facebookで配信予定です。<br>
-            フォローやお知らせの設定ぜひお願いいたします。
-          </p>
-          <div class="l-footer_media">
-            <a class="l-footer_mediaBtn" href="https://twitter.com/frontkansai" target="_blank">
-              <i class="fab fa-twitter"></i>twitterアカウント
-            </a>
-            <a class="l-footer_mediaBtn" href="https://www.facebook.com/FRONTCONF2019/" target="_blank">
-              <i class="fab fa-facebook-f"></i>facebookアカウント
-            </a>
-          </div>
-          <img class="l-footer_kfugLogo" src="~assets/img/kfuglogo-type2.png" alt="Kansai Front-end Users Group">
-        </div>
-      </div>
-    </div>
-  </section>
+  <router-link to="/" class="p-header">
+    <span class="p-header_pcLink">&lt TOPに戻る</span>
+    <span to="" class="p-header_spLink">&lt</span>
+    <div class="p-header_titleLogo" />
+  </router-link>
 </template>
 
 <script>
@@ -30,75 +11,42 @@
 
 <style lang="scss" scoped>
 @import "~/assets/scss/_library.scss";
-.l-footer {
-  &_margin {
-    padding: 20px 0 10px;
-    text-align: center;
-    &Img {
-      max-width: 250px;
-      width: 30%;
-
-      @include desktop {
-        padding: 50px 0 20px;
-        width: 50vw;
-      }
-
-    }
+.p-header {
+  background: transparent linear-gradient(90deg, #1393C6 0, #5378AA 48%, #C46A49 69%, #DD5530 100%) 0 0 no-repeat padding-box;
+  position: relative;
+  display: block;
+  height: 50px;
+  
+  &_titleLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 20px;
+    background: url("~assets/img/logo_text-white.svg") 0 0 no-repeat;
   }
-
-  &_contents {
-    padding: 60px 0 80px;
-    color: white;
-    text-align: center;
-    background: $clr_navy;
-  }
-
-  &_intro {
-    margin-bottom: 1.5em;
-    display: inline-block;
-    font-size: 1.8rem;
-  }
-
-  &_media {
-    margin-bottom: 50px;
-  }
-  &_mediaBtn  {
-    display: inline-block;
-    border: solid 2px white;
-    border-radius: 9999px;
-    margin: 10px;
-    padding: 10px 30px;
-    min-width: 250px;
+  & span {
+    position: absolute;
+    top: 50%;
+    left: 21px;
+    transform: translateY(-50%);
+    letter-spacing: 0.36px;
+    color: #FFFFFF;
     text-decoration: none;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: white;
-    position: relative;
-    background: transparent;
-    opacity: 1;
-    transition: all .3s ease;
-
-    &:hover {
-      opacity: .5;
-      transition: all .3s ease;
-    }
-
-    & i {
-      color: white;
-      margin-right: 15px;
-    }
-
-
-    @include desktop {
-      min-width: 280px;
-      font-size: 1.6rem;
+  }
+  &_pcLink {
+    display: none;
+    @include desktop() {
+      display: inline-block;
     }
   }
-  &_kfugLogo {
-    max-width: 200px;
+  &_spLink {
+    display: inline-block;
+    @include desktop() {
+      display: none;
+    }
   }
-
 }
 
 </style>
