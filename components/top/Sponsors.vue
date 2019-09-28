@@ -7,28 +7,29 @@
             <h1 class="p-sponsors_secHeading">Sponsors</h1>
             <div class="p-sponsors_diamond">
               <div class="p-sponsors_diamond_list">
-                <sponsor-item 
-                  class="p-sponsors_diamond_list_item" 
-                  :key=index v-for="(sponsorData, index) in this.diamondSponsorDataList"
-                  :sponsor-data="sponsorData">
-                </sponsor-item>
+                <div class="p-sponsors_diamond_list_item" :key=index v-for="(sponsorData, index) in this.diamondSponsorDataList" >
+                  <sponsor-item 
+                    :sponsor-data="sponsorData">
+                  </sponsor-item>
+                </div>
               </div>
             </div>
             <div class="p-sponsors_gold">
               <div class="p-sponsors_gold_list">
-                <sponsor-item 
-                  class="p-sponsors_gold_list_item" 
-                  :key=index v-for="(sponsorData, index) in this.goldSponsorDataList"
-                  :sponsor-data="sponsorData">
-                </sponsor-item>
+                <div class="p-sponsors_gold_list_item" :key=index v-for="(sponsorData, index) in this.goldSponsorDataList">
+                  <sponsor-item  
+                    :sponsor-data="sponsorData">
+                  </sponsor-item>
+                </div>
               </div>
             </div>
             <div class="p-sponsors_silver">
               <div class="p-sponsors_silver_list">
-                <sponsor-item class="p-sponsors_silver_list_item" 
-                  :key=index v-for="(sponsorData, index) in this.silverSponsorDataList" 
-                  :sponsor-data="sponsorData">
-                </sponsor-item>
+                <div class="p-sponsors_silver_list_item" :key=index v-for="(sponsorData, index) in this.silverSponsorDataList" >
+                  <sponsor-item 
+                    :sponsor-data="sponsorData">
+                  </sponsor-item>
+                </div>
               </div>
             </div>
           </div>
