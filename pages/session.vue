@@ -16,7 +16,7 @@
         <h2 class="p-session_title">{{ speaker.session.title }}</h2>
         <p class="p-session_detail" v-html="checkNewLineChar(speaker.session.detail)" />
         <div class="p-speaker">
-          <div class="p-speaker_img" :style="`background-image: url(${requireImage(speaker.image)})`" />
+          <div class="p-speaker_img" :style="`background-image: url(/images/speakers/${speaker.image})`" />
           <div class="p-speaker_info">
       　    <div class="p-speaker_name">{{ speaker.name }}</div>
         　  <div class="p-speaker_company">所属 {{ speaker.company }}</div>
