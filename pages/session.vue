@@ -60,9 +60,6 @@ export default {
   methods: {
     checkNewLineChar(text) {
       return text.replace(/\n/gm, "<br>");
-    },
-    requireImage(imageName) {
-      return require(`~/assets/img/speakers/${imageName}`);
     }
   }
 }
