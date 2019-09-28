@@ -2,6 +2,7 @@ const speakers = [
   "onoueyosuke",
   "taguchiwataru",
   "matsushitaeri",
+  "kojimadaiki",
 ];
 
 const speakersList = speakers.map(speaker => {

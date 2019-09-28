@@ -19,7 +19,7 @@
           <div class="p-speaker_img" :style="`background-image: url(/images/speakers/${speaker.image})`" />
           <div class="p-speaker_info">
       　    <div class="p-speaker_name">{{ speaker.name }}</div>
-        　  <div class="p-speaker_company">所属 {{ speaker.company }}</div>
+        　  <div class="p-speaker_company" v-if="speaker.company">所属 {{ speaker.company }}</div>
             <p class="p-speaker_detail" v-html="checkNewLineChar(speaker.detail)" />
             <a v-if="speaker.twitter" :href="speaker.twitter" target="_blank">
               <span class="p-speaker_icon p-twitter" />
