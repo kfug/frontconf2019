@@ -1,9 +1,8 @@
 <template>
   <div class="p-session">
     <router-link to="/" class="p-header">
-      <router-link to="/" class="p-header_pcLink">&lt; TOPに戻る</router-link>
-      <router-link to="" class="p-header_spLink">&lt
-      </router-link>
+      <span class="p-header_pcLink">&lt TOPに戻る</span>
+      <router-link to="" class="p-header_spLink">&lt</router-link>
       <div class="p-header_titleLogo" />
     </router-link>
     <div class="c-container">
