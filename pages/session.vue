@@ -106,7 +106,6 @@ h2, h3, h4, p{
     top: 50%;
     left: 21px;
     transform: translateY(-50%);
-    font: 18px/35px Noto Sans CJK JP;
     letter-spacing: 0.36px;
     color: #FFFFFF;
     text-decoration: none;
@@ -146,7 +145,6 @@ h2, h3, h4, p{
     }
   }
   & p {
-    font: 16px/20px Noto Sans CJK JP;
     letter-spacing: 0;
   }
 }
@@ -192,20 +190,16 @@ h2, h3, h4, p{
     }
   }
   &_title {
-    font: Bold 18px/27px Noto Sans CJK JP;
     margin-bottom: 20px;
     @include desktop() {
-      font: Bold 30px/45px Noto Sans CJK JP;
       margin-bottom: 30px;
     }
   }
   &_detail {
-    font: Regular 14px/24px Noto Sans CJK JP;
     border-bottom: solid #DEDEDE 1px;
     padding-bottom: 40px;
     margin-bottom: 30px;
     @include desktop() {
-      font: 18px/32px Noto Sans CJK JP;
       margin-bottom: 40px;
     }
   }
@@ -232,26 +226,18 @@ h2, h3, h4, p{
     }
   }
   &_name {
-    font: Bold 18px/22px Noto Sans CJK JP;
     margin-bottom: 15px;
     @include desktop() {
-      font: Bold 22px/22px Noto Sans CJK JP;
       margin-bottom: 10px;
     }
   }
   &_company {
-    font: Regular 14px/22px Noto Sans CJK JP;
     margin-bottom: 20px;
-    @include desktop() {
-      font: Medium 18px/18px Noto Sans CJK JP;
-    }
   }
   &_detail {
-    font: Regular 14px/24px Noto Sans CJK JP;
     margin-bottom: 30px;
     text-align: left;
     @include desktop() {
-      font: 16px/30px Noto Sans CJK JP;
     }
   }
   &_icon {
@@ -295,7 +281,6 @@ h2, h3, h4, p{
   margin-bottom: 150px;
 }
 .p-back{
-  font: Regular 22px/25px Noto Sans CJK JP;
   color: $clr_textLarge;
   border-radius: 109px;
   text-decoration: none;
