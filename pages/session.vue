@@ -10,11 +10,24 @@
         <h1>Sessions</h1>
         <p>フロントエンドのエンジニアリングや、マークアップ、デザインなど、<br> Webに関わる全ての人に是非届けたい珠玉のセッション構成でお送りしております。</p>
       </div>
+
+
+    <div class="p-refine">
+      <a v-for="tag in tagList" :class="tagClass(tag.key)" :key="tag.key" @click="clickTag(tag.key)">{{ tag.label }}</a>
+    </div>
+
       <div class="p-session_bgImg1" />
       <div class="p-session_bgImg2" />
-      <div class="p-session_card" v-for="(speaker, index) in speakers" :key="index">
+
+      <div class="p-session_card" v-for="(speaker, index) in filteredSpeakers" :key="index">
+        <div class="p-session_information">
+        <div class="p-session_halltag">ホールA</div>
+        <div class="p-session_time">11:00〜</div>
+        <div class="p-session_tag">Nuxt.js</div>
+        </div>
         <h2 class="p-session_title">{{ speaker.session.title }}</h2>
         <p class="p-session_detail" v-html="checkNewLineChar(speaker.session.detail)" />
+
         <div class="p-speaker">
           <div class="p-speaker_img" :style="`background-image: url(/images/speakers/${speaker.image})`" />
           <div class="p-speaker_info">
@@ -33,10 +46,33 @@
           </div>
         </div>
       </div>
+
+      <div v-if="filteredCommunities.length > 0">
+        <div class="p-title">
+          <h1>JoinCommunity</h1>
+        </div>
+
+        <div class="p-session_card" v-for="(community, index) in filteredCommunities" :key="index">
+          <div class="p-speaker">
+            <div class="p-speaker_img" :style="`background-image: url(/images/communities/${community.image})`" />
+            <div class="p-speaker_info">
+              　    <div class="p-speaker_name">{{ community.name }}</div>
+              <p class="p-speaker_detail" v-html="checkNewLineChar(community.detail)" />
+              <a class="p-btn"
+                 href="https://docs.google.com/forms/d/e/1FAIpQLSewyGycmlpy9pkd3Fqp3FtanZopeoY4DTjcuofvdY15BfqDaA/viewform" target="_blank"
+              >Join!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="p-button">
         <router-link to="/" class="p-back">TOPに戻る</router-link>
       </div>
     </div>
+
+
+
     <l-footer :marginImg="false" />
     <l-share-footer />
   </div>
@@ -45,7 +81,8 @@
 <script>
 import LFooter from "~/components/Footer.vue";
 import LShareFooter from "~/components/top/ShareFooter.vue";
-import { contents } from "~/contents/speakers/speakers"
+import { contents } from "~/contents/speakers/speakers";
+import { communities } from "json-loader!yaml-loader!~/contents/communities.yml";
 
 export default {
   components: {
@@ -54,12 +91,59 @@ export default {
   },
   data() {
     return {
-      speakers: contents
+      speakers: contents,
+      communities,
+      form:{
+        tag: null
+      },
+      tagList:[
+        {
+          label: "v-kansai",
+          key: "vkansai"
+        },
+        {
+          label: "関西フロントエンドUG",
+          key: "kfug"
+        },
+      ]
     }
+  },
+  computed:{
+    filteredSpeakers(){
+      if(this.form.tag !== null){
+        return this.speakers.filter( speaker => {
+          return speaker.tags && speaker.tags.indexOf(this.form.tag) !== -1
+        })
+      }else{
+        return this.speakers
+      }
+    },
+    filteredCommunities(){
+      if(this.form.tag !== null){
+        return this.communities.filter( communities => {
+          return communities.key === this.form.tag
+        })
+      }else{
+        return []
+      }
+    },
   },
   methods: {
     checkNewLineChar(text) {
       return text.replace(/\n/gm, "<br>");
+    },
+    clickTag(e){
+      if(e === this.form.tag){
+        this.form.tag = null
+      }else{
+        this.form.tag = e
+      }
+    },
+    tagClass(e){
+      return {
+        "p-refine_tag" : true,
+        "active": this.form.tag === e
+      }
     }
   }
 }
@@ -182,7 +266,7 @@ h2, h3, h4, p{
     @include desktop() {
       max-width: 940px;
       margin: 0 auto 50px;
-      padding: 80px;
+      padding: 38px 80px 80px 80px;
     }
   }
   &_title {
@@ -198,6 +282,37 @@ h2, h3, h4, p{
     @include desktop() {
       margin-bottom: 40px;
     }
+  }
+  &_information{
+    display: flex;
+    font-family: Offside;
+    font-size:1.8rem;
+    margin-bottom:19px;
+    position: relative;
+  }
+  &_halltag{
+    display:inline-block;
+    background-color:#F29A8B;
+    color:#FFFFFF;
+    padding:3px 12px;
+  }
+  &_time{
+    font-size:1.5rem;
+    padding-left:10px;
+    padding-top:5px;
+    @include desktop() {
+      font-size:1.8rem;
+      padding-left:20px;
+      padding-top:5px;
+    }
+  }
+  &_tag{
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    padding:3px 12px;
+    position:absolute;
+    top:0%;
+    right:0%;
   }
 }
 
@@ -288,4 +403,37 @@ h2, h3, h4, p{
   width: 300px;
   height: 60px;
 }
+
+.p-refine {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 35px;
+  padding: 19px 30px;
+  position: relative;
+  z-index: 2;
+  &_tag {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #636363;
+    background-color: #EAE9EA;
+    margin-right: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    @include desktop() {
+      font-size:1.8rem;
+    }
+  }
+}
+
+.active{
+  color: #fff !important;
+  background-color: #419BF9;
+}
+
+.p-btn {
+  @include c-btn;
+}
+
 </style>

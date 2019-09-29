@@ -1,0 +1,13 @@
+communities:
+  - name: 関西フロントエンドUG
+    detail: |
+      関西フロントエンドUGのコミュニティーだよ!!
+    key: kfug
+    image: kfug.png
+    link: https://kfug.connpass.com/
+  - name: フロントエンドカンファレンス
+    detail: |
+      フロントエンドのコミュニティーだよ！
+    key: hoge
+    image: kfug.png
+    link: https://kfug.connpass.com/
