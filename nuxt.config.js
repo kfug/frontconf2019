@@ -65,4 +65,10 @@ export default {
      */
     extend(config, ctx) {},
   },
+  generate: {
+    routes: [
+        '/sponsors/yumemi'
+    ],
+    fallback: true,
+  }
 };
