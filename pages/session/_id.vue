@@ -7,14 +7,14 @@
       </div>
       <div class="p-session_bgImg1" />
       <div class="p-session_bgImg2" />
-      <div class="p-session_card" v-for="(speaker, index) in speakers" :key="index">
+      <div v-if="speaker" class="p-session_card">
         <h2 class="p-session_title">{{ speaker.session.title }}</h2>
         <p class="p-session_detail" v-html="checkNewLineChar(speaker.session.detail)" />
         <div class="p-speaker">
           <div class="p-speaker_img" :style="`background-image: url(/images/speakers/${speaker.image})`" />
           <div class="p-speaker_info">
-      　    <div class="p-speaker_name">{{ speaker.name }}</div>
-        　  <div class="p-speaker_company" v-if="speaker.company">所属 {{ speaker.company }}</div>
+            　    <div class="p-speaker_name">{{ speaker.name }}</div>
+            　  <div class="p-speaker_company" v-if="speaker.company">所属 {{ speaker.company }}</div>
             <p class="p-speaker_detail" v-html="checkNewLineChar(speaker.detail)" />
             <a v-if="speaker.twitter" :href="speaker.twitter" target="_blank">
               <span class="p-speaker_icon p-twitter" />
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="p-button">
-        <router-link to="/" class="p-back">TOPに戻る</router-link>
+        <router-link to="/session" class="p-back">SESSION一覧に戻る</router-link>
       </div>
     </div>
   </div>
@@ -40,12 +40,19 @@ import { contents } from "~/contents/speakers/speakers"
 
 export default {
   layout: "page",
-  components: {
-  },
   data() {
     return {
-      speakers: contents
+      speaker: null
     }
+  },
+  mounted() {
+    const path = this.$route.path.split("/");
+    const index = path[path.length - 1] - 1;
+    if (contents.length <= index) {
+      this.$router.push("/session");
+      return
+    }
+    this.speaker = contents[index];
   },
   methods: {
     checkNewLineChar(text) {
@@ -153,14 +160,14 @@ h2, h3, h4, p{
 }
 
 .p-speaker {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   text-align: center;
   @include desktop() {
-    flex-wrap: nowrap;
+    display: flex;
     text-align: left;
   }
   &_img {
+    display: inline-block;
     min-width: 150px;
     height: 150px;
     background: no-repeat;
