@@ -1,6 +1,7 @@
 <template>
   <main>
     <p-hero></p-hero>
+    <p-ticket></p-ticket>
     <p-about></p-about>
     <p-wantsponsor></p-wantsponsor>
     <p-sessions></p-sessions>
@@ -12,6 +13,7 @@
 
 <script>
 import PHero from "~/components/top/Hero.vue";
+import PTicket from "~/components/top/Ticket.vue";
 import PAbout from "~/components/top/About.vue";
 import PSponsors from "~/components/top/Sponsors.vue";
 import PWantsponsor from "~/components/top/Wantsponsor.vue";
@@ -22,6 +24,7 @@ import LShareFooter from "~/components/top/ShareFooter.vue";
 export default {
   components: {
     PHero,
+    PTicket,
     PAbout,
     PWantsponsor,
     PSessions,
