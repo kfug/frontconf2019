@@ -11,13 +11,13 @@
               ありがとうございました
             </span>
             <span v-else>
-              チケット販売<br class="p-sp" />
-              開始しました！
+              チケット販売の販売を開始しました。 <br>
+              購入は peatix にて！
             </span>
           </p>
           <a
             class="p-ticket__btn"
-            href="#" target="_blank"
+            href="https://frontconf2019.peatix.com/" target="_blank"
           >
             <span v-if="soldOut">
               完売しました
@@ -37,7 +37,7 @@
     name: "Ticket.vue",
     data() {
       return {
-        soldOut: true
+        soldOut: false
       }
     }
   }
