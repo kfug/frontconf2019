@@ -6,7 +6,10 @@ const speakers = [
   "jimboyoshihide",
   "suzukitakayuki",
   "hamadamasanari",
-  "okitakanori"
+  "okitakanori",
+  "maedakeisuke",
+  "sakakibaramasahiko",
+  "hiranomasashi"
 ];
 
 const speakersList = speakers.map(speaker => {
