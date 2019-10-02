@@ -40,8 +40,6 @@ import { contents } from "~/contents/speakers/speakers"
 
 export default {
   layout: "page",
-  components: {
-  },
   data() {
     return {
       speakers: contents
@@ -153,14 +151,14 @@ h2, h3, h4, p{
 }
 
 .p-speaker {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   text-align: center;
   @include desktop() {
-    flex-wrap: nowrap;
+    display: flex;
     text-align: left;
   }
   &_img {
+    display: inline-block;
     min-width: 150px;
     height: 150px;
     background: no-repeat;
