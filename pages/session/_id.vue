@@ -48,7 +48,7 @@ export default {
   mounted() {
     const path = this.$route.path.split("/");
     const index = path[path.length - 1] - 1;
-    if (contents.length <= index) {
+    if (!Number.isInteger(index) || contents.length <= index) {
       this.$router.push("/session");
       return
     }
