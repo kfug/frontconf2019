@@ -22,7 +22,7 @@
             <a :href="item.url" target="_blank" rel="noopener">
               <img class="p-item__image" :src="`/images/sponsors/${item.key}.png`" :alt="item.name">
             </a>
-<!--            <a class="p-item__btn" href="">紹介ページ</a>-->
+            <router-link class="p-item__btn" v-if="item.page" :to="item.page">紹介ページ</router-link>
           </div>
         </div>
       </div>

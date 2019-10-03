@@ -40,7 +40,6 @@ export default {
     },
     validate ({ params }) {
         const sponsor = contents[params.name]
-        console.log(sponsor,contents)
         return sponsor !== undefined
     },
     data(){

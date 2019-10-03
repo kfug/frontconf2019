@@ -16,6 +16,7 @@ sponsors:
     rank: gold
     key: SP0202
     url: https://corp.smaregi.jp/
+    page: /sponsors/smaregi
   - name: 株式会社リビルド
     rank: silver
     key: SP0302
@@ -36,3 +37,4 @@ sponsors:
     rank: gold
     key: SP0203
     url: https://impath.co.jp/
+    page: /sponsors/impath

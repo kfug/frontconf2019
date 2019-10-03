@@ -68,6 +68,8 @@ export default {
   generate: {
     routes: [
         '/sponsors/yumemi',
+        '/sponsors/smaregi',
+        '/sponsors/impath',
       "/session/onoueyosuke",
       "/session/taguchiwataru",
       "/session/matsushitaeri",
