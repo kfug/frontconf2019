@@ -67,7 +67,22 @@ export default {
   },
   generate: {
     routes: [
-        '/sponsors/yumemi'
+        '/sponsors/yumemi',
+      "/session/onoueyosuke",
+      "/session/taguchiwataru",
+      "/session/matsushitaeri",
+      "/session/kojimadaiki",
+      "/session/jimboyoshihide",
+      "/session/suzukitakayuki",
+      "/session/hamadamasanari",
+      "/session/okitakanori",
+      // "maedakeisuke",
+      "/session/sakakibaramasahiko",
+      "/session/hiranomasashi",
+      "/session/yamashitakazuki",
+      "/session/kiriruwasirutsohu"
+
+
     ],
     fallback: true,
   }

@@ -15,7 +15,9 @@ const speakers = [
 ];
 
 const speakersList = speakers.map(speaker => {
-  return require(`json-loader!yaml-loader!./${speaker}.yml`);
+  const speakerInfo = require(`json-loader!yaml-loader!./${speaker}.yml`)
+  speakerInfo.key = speaker
+  return speakerInfo;
 });
 
 export const contents = speakersList;

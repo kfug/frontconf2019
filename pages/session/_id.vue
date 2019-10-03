@@ -1,5 +1,5 @@
 <template>
-  <div class="p-session">
+  <div class="p-session" v-if="speaker">
     <div class="c-container">
       <div class="p-title">
         <h1>Sessions</h1>
@@ -41,18 +41,22 @@ import { contents } from "~/contents/speakers/speakers"
 export default {
   layout: "page",
   data() {
-    return {
-      speaker: null
-    }
+    return {}
+  },
+  computed: {
+      name(){
+          return this.$route.params.id
+      },
+      speaker(){
+          return contents.find(speaker => speaker.key === this.name)
+      }
+
   },
   mounted() {
-    const path = this.$route.path.split("/");
-    const index = path[path.length - 1] - 1;
-    if (!Number.isInteger(index) || contents.length <= index) {
+    if (!this.speaker) {
       this.$router.push("/session");
       return
     }
-    this.speaker = contents[index];
   },
   methods: {
     checkNewLineChar(text) {

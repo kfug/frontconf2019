@@ -8,7 +8,12 @@
       <div class="p-session_bgImg1" />
       <div class="p-session_bgImg2" />
       <div class="p-session_card" v-for="(speaker, index) in speakers" :key="index">
-        <h2 class="p-session_title">{{ speaker.session.title }}</h2>
+        <h2 class="p-session_title">
+          <router-link :to="`/session/${speaker.key}`" class="p-session_titleIcon">
+            #
+          </router-link>
+          {{ speaker.session.title }}
+        </h2>
         <p class="p-session_detail" v-html="checkNewLineChar(speaker.session.detail)" />
         <div class="p-speaker">
           <div class="p-speaker_img" :style="`background-image: url(/images/speakers/${speaker.image})`" />
@@ -136,14 +141,34 @@ h2, h3, h4, p{
   }
   &_title {
     margin-bottom: 20px;
+    position: relative;
+    padding-left: 1em;
     @include desktop() {
+      padding-left: 0em;
       margin-bottom: 30px;
+    }
+  }
+  &_titleIcon {
+    position: absolute;
+    top: 1px;
+    left: 0em;
+    width: 1em;
+    height: 1em;
+    font-size: 1em;
+    display: inline-block;
+    color: #808080;
+    font-weight: bold;
+    line-height: 1em;
+    @include desktop{
+      left: -1em;
     }
   }
   &_detail {
     border-bottom: solid #DEDEDE 1px;
     padding-bottom: 40px;
     margin-bottom: 30px;
+    font-size: .8em;
+    line-height: 1.5em;
     @include desktop() {
       margin-bottom: 40px;
     }
@@ -182,6 +207,8 @@ h2, h3, h4, p{
   &_detail {
     margin-bottom: 30px;
     text-align: left;
+    font-size: .8em;
+    line-height: 1.5em;
     @include desktop() {
     }
   }
