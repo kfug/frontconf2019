@@ -5,18 +5,35 @@
         <div class="p-about_intro">
           <h1 class="p-about_secHeading">Sessions</h1>
           <p class="p-about_read">
-            2016 , 2017 , 2018年とたくさんの人に来場頂いた
-            関西最大級のフロントエンド製作者向けイベント FRONTEND CONFERENCE が今年も開催されます！
+            FRONTEND CONFERENCE 2019 セッション一覧公開中！
             <br />
-            例年通り、 デザイナもエンジニアも、職種問わず
-            Webに携わるすべての人が楽しめるイベントとして
-            様々なセッション・企画等を検討中です！
+            昨年同様、幅広いテーマの登壇内容を集めた珠玉のセッション構成で、
+            デザイナもエンジニアも、職種問わずWebに携わるすべての人が楽しめる内容となっています。
+            <br />
           </p>
           <div class="p-about_actions">
             <nuxt-link class="p-about_btn" to="/session">SESSION 一覧</nuxt-link>
           </div>
         </div>
       </div>
+      <div class="c-container">
+        <div class="p-about_intro">
+          <h1 class="p-about_secHeading">Handson</h1>
+          <p class="p-about_read">
+            セッションだけじゃない、ハンズオン企画も！
+            <br />
+            フロントエンド技術を用いた Web制作をテーマにした ハンズオン企画を検討中！
+            今どきのフロントエンド制作フローを体験したいかたは是非ご参加ください。
+            <br />
+            ハンズオンのコンテンツは近日公開です！
+          </p>
+<!--          <div class="p-about_actions">-->
+<!--            <nuxt-link class="p-about_btn" to="/session">ハンズオン 一覧</nuxt-link>-->
+<!--          </div>-->
+        </div>
+      </div>
+    </div>
+    <div class="p-about">
     </div>
   </section>
 </template>
@@ -59,7 +76,7 @@
     }
   }
   &_secHeading {
-    @include c-secHeading-center;
+    @include c-secHeading-left;
 
   }
   &_read {
