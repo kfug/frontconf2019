@@ -35,6 +35,8 @@
             </a>
           </div>
         </div>
+        <div class="p-silver__item"/>
+        <div class="p-silver__item"/>
       </div>
 
       <div class="p-sponsorsTitle">

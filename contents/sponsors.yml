@@ -37,9 +37,15 @@ sponsors:
     url: https://impath.co.jp/
   - name: rabify CDN
     rank: silver
-    key: SP0305
+    key: SP0306
     url: https://www.rabify.me/
   - name: 株式会社chatbox.inc
     rank: media
     key: SP0401
     url: https://chatbox-inc.com/
+  - name: Elevenback LLC
+    rank: silver
+    key: SP0307
+    url: https://elevenback.co.jp/
+
+
