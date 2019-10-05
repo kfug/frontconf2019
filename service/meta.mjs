@@ -4,6 +4,7 @@ const defaultMeta = {
   title: 'FRONTEND CONFERENCE 2019',
   host: 'https://2019.kfug.jp',
   image: '/ogp.jpg',
+  tw_type: 'summary_large_image'
 };
 
 export default args => {
