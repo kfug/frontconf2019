@@ -11,7 +11,7 @@ const speakers = [
   "sakakibaramasahiko",
   "hiranomasashi",
   "yamashitakazuki",
-  "kiriruwasirutsohu",
+  "kirillvasiltsov",
   "onishiyuji",
   "conti"
 ];
