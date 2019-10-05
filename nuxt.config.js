@@ -70,6 +70,7 @@ export default {
         '/sponsors/yumemi',
         '/sponsors/smaregi',
         '/sponsors/impath',
+        '/sponsors/tambourine',
       "/session/onoueyosuke",
       "/session/taguchiwataru",
       "/session/matsushitaeri",
@@ -82,7 +83,9 @@ export default {
       "/session/sakakibaramasahiko",
       "/session/hiranomasashi",
       "/session/yamashitakazuki",
-      "/session/kiriruwasirutsohu"
+      "/session/kirillvasiltsov",
+      "/session/onishiyuji",
+      "/session/conti"
 
 
     ],
