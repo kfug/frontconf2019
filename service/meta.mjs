@@ -14,7 +14,7 @@ export default args => {
     {hid: 'OG:TITLE', property: 'og:title', content: title},
     {hid: 'OG:IMAGE', property: 'og:image', content: `${host}${image}`},
     {hid: 'OG:DESC', property: 'og:description', content: description},
-    {hid: 'TW:CARD', name: 'twitter:card', content: 'summary_large_image'},
+    {hid: 'TW:CARD', name: 'twitter:card', content: tw_type},
     {hid: 'TW:SITE', name: 'twitter:site', content: '@frontkansai'},
     {hid: 'TW:CREATOR', name: 'twitter:creator', content: '@frontkansai'},
     {hid: 'TW:TITLE', name: 'twitter:title', content: title},
