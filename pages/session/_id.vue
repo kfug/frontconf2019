@@ -13,8 +13,8 @@
         <div class="p-speaker">
           <div class="p-speaker_img" :style="`background-image: url(/images/speakers/${speaker.image})`" />
           <div class="p-speaker_info">
-            　    <div class="p-speaker_name">{{ speaker.name }}</div>
-            　  <div class="p-speaker_company" v-if="speaker.company">所属 {{ speaker.company }}</div>
+                 <div class="p-speaker_name">{{ speaker.name }}</div>
+               <div class="p-speaker_company" v-if="speaker.company">所属 {{ speaker.company }}</div>
             <p class="p-speaker_detail" v-html="checkNewLineChar(speaker.detail)" />
             <a v-if="speaker.twitter" :href="speaker.twitter" target="_blank">
               <span class="p-speaker_icon p-twitter" />
@@ -37,6 +37,7 @@
 
 <script>
 import { contents } from "~/contents/speakers/speakers"
+import createMeta from '~/service/meta';
 
 export default {
   layout: "page",
@@ -51,6 +52,18 @@ export default {
           return contents.find(speaker => speaker.key === this.name)
       }
 
+  },
+  head(){
+      const title = `${this.speaker.session.title} - FRONTEND CONFRENCE 2019`
+      return {
+          title,
+          meta: [
+            ...createMeta({
+                title,
+                image: `/images/speakers/${this.speaker.image}`
+            })
+          ]
+      }
   },
   mounted() {
     if (!this.speaker) {
