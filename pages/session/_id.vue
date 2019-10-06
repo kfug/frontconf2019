@@ -60,7 +60,8 @@ export default {
           meta: [
             ...createMeta({
                 title,
-                image: `/images/speakers/${this.speaker.image}`
+                image: `/images/speakers/${this.speaker.image}`,
+                tw_type: "summary"
             })
           ]
       }
