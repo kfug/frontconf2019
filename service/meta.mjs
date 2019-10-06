@@ -8,7 +8,7 @@ const defaultMeta = {
 };
 
 export default args => {
-  const {title, description, host, image} = {...defaultMeta, ...args};
+  const {title, description, host, image, tw_type} = {...defaultMeta, ...args};
   return [
     {hid: 'DESC', name: 'description', content: description},
     {hid: 'OG:TITLE', property: 'og:title', content: title},
