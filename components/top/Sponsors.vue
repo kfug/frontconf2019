@@ -35,9 +35,26 @@
             </a>
           </div>
         </div>
+        <div class="p-silver__item"/>
+        <div class="p-silver__item"/>
       </div>
 
-<!--      <div class="p-sponsors__text">-->
+      <div class="p-sponsorsTitle">
+        <h2 class="p-sponsorsTitle__title">Media・Support</h2>
+      </div>
+
+      <div class="p-media">
+        <div class="p-silver__item" v-for="item in medias" :key="item.key">
+          <div class="p-item">
+            <a :href="item.url" target="_blank" rel="noopener">
+              <img class="p-item__image" :src="`/images/sponsors/${item.key}.png`" :alt="item.name">
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!--      <div class="p-sponsors__text">-->
 <!--        FRONTEND CONFERENCE 2019 では スポンサー企業様のご協賛をお待ちしております！-->
 <!--        <br />-->
 <!--        <br />-->
@@ -80,6 +97,11 @@ export default {
             return this.sponsors.filter(item => {
                 return item.rank === "silver"
             })
+        },
+        medias(){
+            return this.sponsors.filter(item => {
+                return item.rank === "media"
+            })
         }
     }
 
@@ -119,7 +141,8 @@ export default {
 
 .p-platinums,
 .p-gold,
-.p-silver{
+.p-silver,
+.p-media{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
