@@ -1,10 +1,14 @@
 name: 小島大基
 company:
+hall: "C-3"
+time: "13:00"
 detail: |
   現役の大学院生。
   大学院生ではタスク並列言語に関する研究を行っています。
   現在、インターンとして、主にWebサービス系の会社でVueを使ったフロントエンドの開発を行っています。
   プライベートではフロントエンドやWeb技術だけでなく、iOS・Androidアプリの開発なども行っております。
+tags:
+  - kfug
 image: kojimadaiki.jpg
 twitter:
 facebook: https://www.facebook.com/daiki.kojima.716

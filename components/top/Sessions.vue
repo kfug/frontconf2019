@@ -11,6 +11,8 @@
             デザイナもエンジニアも、職種問わずWebに携わるすべての人が楽しめる内容となっています。
             <br />
           </p>
+          <iframe width="100%" height="480px" src="https://drive.google.com/a/chatbox-inc.com/file/d/1C9rtaDjQEeTO7EamhQHroP3PdX-CtpQK/preview" frameborder="0"></iframe>
+          
           <div class="p-about_actions">
             <nuxt-link class="p-about_btn" to="/session">SESSION 一覧</nuxt-link>
           </div>

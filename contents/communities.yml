@@ -1,0 +1,29 @@
+communities:
+  - name: 関西フロントエンドUG
+    detail: |
+      関西フロントエンドUGのコミュニティーだよ!!
+    key: kfug
+    image: kfug.png
+    label: Web制作
+    link: https://kfug.connpass.com/
+  - name: ng-kyoto
+    detail: |
+      Anglar のコミュニティ
+    key: ngkyoto
+    image: kfug.png
+
+    link: https://kfug.connpass.com/
+  - name: v-kansai
+    detail: |
+      Anglar のコミュニティ
+    key: vkansai
+    image: kfug.png
+
+    link: https://kfug.connpass.com/
+  - name: Adobe XD
+    detail: |
+      Anglar のコミュニティ
+    key: adobexd
+    image: kfug.png
+
+    link: https://kfug.connpass.com/
