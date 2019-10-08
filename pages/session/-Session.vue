@@ -3,7 +3,7 @@
     <div class="p-session_information">
       <span class="p-session_halltag" :to="`/session?hall=${speaker.hall}`">{{speaker.hall}}</span>
       <span class="p-session_time" :to="`/session?time=${speaker.time}`">{{speaker.time}} 〜</span>
-      <span v-if="speaker.tag" class="p-session_tag" :to="`/session/tags/${speaker.tag}`">{{speaker.tag}}</span>
+      <router-link v-if="speaker.tag" class="p-session_tag" :to="`/group/${speaker.tagkey}`">{{speaker.tag}}</router-link>
     </div>
     <h2 class="p-session_title">
       <router-link :to="`/session/${speaker.key}`" class="p-session_titleIcon">

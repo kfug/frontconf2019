@@ -11,6 +11,8 @@ image: suzukitakayuki.jpg
 twitter: https://twitter.com/kanbo0605
 facebook: https://www.facebook.com/takayuki.suzuki.39
 link:
+tag: Vue.js
+tagkey: vkansai
 session:
   title: Nuxt.js + Firebaseでの開発と高速化に挑んだ話
   detail: |
