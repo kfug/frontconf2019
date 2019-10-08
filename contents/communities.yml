@@ -32,7 +32,7 @@ communities:
     link: https://xdstudy-osaka.connpass.com/
   - name: Ionic Japan User Group
     detail: |
-      Ionicはモバイルフレームワークのひとつで、これを使うとiTunesストアやGoogle Play Storeで配信することのできるアプリをHTML5でつくることができます。C++やSwift、Javaを覚えなくてもアプリをつくることができるWeb制作者向けのフレームワークです。
+      Ionicはモバイルフレームワークのひとつで、これを使うとApp StoreやGoogle Play Storeで配信することのできるアプリをWeb技術でつくることができます。Swift、Javaを覚えなくてもアプリをつくることができるWeb制作者向けのフレームワークです。
     key: ionic
     image: ionic-jpan.png
     link: https://ionic-jp.connpass.com/
