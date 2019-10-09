@@ -20,6 +20,21 @@
       </div>
       <div class="c-container">
         <div class="p-about_intro">
+          <h1 class="p-about_secHeading">Lightning Talk</h1>
+          <p class="p-about_read">
+            本編ラストの Lightning Talk は現在 Connpass にて募集中！
+            <br />
+            ５分のスタイルで話すショートセッションで、登壇が初めての人でも気軽に参加できます！
+            <br />
+            お申し込みは Connpass のサイトより。
+          </p>
+          <div class="p-about_actions">
+            <a class="p-about_btn" href="https://kfug.connpass.com/event/150932/" target="_blank">Connpass</a>
+          </div>
+        </div>
+      </div>
+      <div class="c-container">
+        <div class="p-about_intro">
           <h1 class="p-about_secHeading">Handson</h1>
           <p class="p-about_read">
             セッションだけじゃない、ハンズオン企画も！

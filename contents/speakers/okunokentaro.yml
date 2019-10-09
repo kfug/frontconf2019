@@ -7,6 +7,8 @@ detail: |
 image: okunokentaro.jpg
 twitter: https://twitter.com/okunokentaro
 facebook:
+tag: angular
+tagkey: ngkyoto
 link: https://okunokentaro.com
 session:
   title: ディレクトリ構成ベストプラクティス 〜 Angularアプリを作り続けてわかったこと

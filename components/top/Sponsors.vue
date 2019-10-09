@@ -53,6 +53,20 @@
         </div>
       </div>
 
+      <div class="p-sponsorsTitle">
+        <h2 class="p-sponsorsTitle__title">Groups</h2>
+      </div>
+
+      <div class="p-media">
+        <div class="p-silver__item" v-for="item in communities" :key="item.key">
+          <div class="p-item">
+            <router-link :to="`/group/${item.key}`" rel="noopener">
+              <img class="p-item__image" :src="`/images/communities/${item.image}`" :alt="item.name">
+            </router-link>
+          </div>
+        </div>
+      </div>
+
 
       <!--      <div class="p-sponsors__text">-->
 <!--        FRONTEND CONFERENCE 2019 では スポンサー企業様のご協賛をお待ちしております！-->
@@ -75,11 +89,13 @@
 
 <script>
 const {sponsors} = require("json-loader!yaml-loader!~/contents/sponsors.yml");
+const {communities} = require("json-loader!yaml-loader!~/contents/communities.yml");
 
 export default {
     data(){
         return {
-            sponsors
+            sponsors,
+            communities
         }
     },
     computed:{
