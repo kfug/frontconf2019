@@ -23,16 +23,17 @@ communities:
     key: vkansai
     image: v-kansai.png
     link: https://vuekansai.connpass.com/
-  - name: Adobe XD ユーザーグループ大阪
-    key: adobexd
-    detail: |
-      XD好きが集まるAdobe XD ユーザーグループの大阪版が主催する勉強会です。
-      ワイヤーフレーム・UIデザイン・プロトタイピングの知識・経験を参加者全員で共有したり、最近の制作を取り巻くUXやそのツール・プロセスについて勉強することを目的にしています。
-    image: xd-user-group.png.png
-    link: https://xdstudy-osaka.connpass.com/
+#  - name: Adobe XD ユーザーグループ大阪
+#    key: adobexd
+#    detail: |
+#      XD好きが集まるAdobe XD ユーザーグループの大阪版が主催する勉強会です。
+#      ワイヤーフレーム・UIデザイン・プロトタイピングの知識・経験を参加者全員で共有したり、最近の制作を取り巻くUXやそのツール・プロセスについて勉強することを目的にしています。
+#    image: xd-user-group.png.png
+#    link: https://xdstudy-osaka.connpass.com/
   - name: Ionic Japan User Group
     detail: |
-      Ionicはモバイルフレームワークのひとつで、これを使うとApp StoreやGoogle Play Storeで配信することのできるアプリをWeb技術でつくることができます。Swift、Javaを覚えなくてもアプリをつくることができるWeb制作者向けのフレームワークです。
+      IonicはWeb技術を使ったモバイルアプリとデスクトップアプリ制作をサポートします。
+      Ionicを使うことで、iOS、Androidのそれぞれに準拠したUIコンポーネントやアニメーションを利用することができます。つくったWebアプリをApp Store/Google Play Storeで配信するための機能があるので、Web制作者がアプリ開発をはじめる第一歩におすすめです。
     key: ionic
     image: ionic-jpan.png
     link: https://ionic-jp.connpass.com/
