@@ -85,7 +85,11 @@ export default {
       "/session/yamashitakazuki",
       "/session/kirillvasiltsov",
       "/session/onishiyuji",
-      "/session/conti"
+      "/session/conti",
+      "/session/hanatanitakuma",
+      "/session/okunokentaro",
+      "/session/kawamatayuga",
+      "/session/mikakane",
 
 
     ],
