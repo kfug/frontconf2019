@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="p-session_information">
-      <span class="p-session_halltag" :to="`/session?hall=${speaker.hall}`">{{speaker.hall}}</span>
+      <span :class="`p-session_halltag--${speaker.hall.split('-')[0]}`" :to="`/session?hall=${speaker.hall}`">{{speaker.hall}}</span>
       <span class="p-session_time" :to="`/session?time=${speaker.time}`">{{speaker.time}} 〜</span>
       <router-link v-if="speaker.tag" class="p-session_tag" :to="`/group/${speaker.tagkey}`">{{speaker.tag}}</router-link>
     </div>
@@ -150,9 +150,24 @@
       position: relative;
     }
 
-    &_halltag {
+    &_halltag--A {
       display: inline-block;
       background-color: #F29A8B;
+      border-radius: 5px;
+      color: #FFFFFF;
+      padding: 3px 12px;
+    }
+    &_halltag--B {
+      display: inline-block;
+      background-color: #64B297;
+      border-radius: 5px;
+      color: #FFFFFF;
+      padding: 3px 12px;
+    }
+    &_halltag--C {
+      display: inline-block;
+      background-color: #56B6DB;
+      border-radius: 5px;
       color: #FFFFFF;
       padding: 3px 12px;
     }
