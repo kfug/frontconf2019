@@ -7,7 +7,7 @@ const speakers = [
   "suzukitakayuki",
   "hamadamasanari",
   "okitakanori",
-  // "maedakeisuke",
+  "maedakeisuke",
   "sakakibaramasahiko",
   "hiranomasashi",
   "yamashitakazuki",
