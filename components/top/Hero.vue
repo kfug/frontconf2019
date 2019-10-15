@@ -9,7 +9,7 @@
           <h2 class="p-hero_infoDate">2019 .11 .02</h2>
           <h3 class="p-hero_infoPlace">グランフロントにて開催決定！</h3>
           <p class="p-hero_infoWant">
-            登壇者、スポンサー募集中
+            チケット好評発売中！
             <span class="line"></span>
           </p>
         </div>

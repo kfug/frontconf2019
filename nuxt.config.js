@@ -65,4 +65,41 @@ export default {
      */
     extend(config, ctx) {},
   },
+  generate: {
+    routes: [
+        '/sponsors/yumemi',
+        '/sponsors/ci',
+        '/sponsors/smaregi',
+        '/sponsors/impath',
+        '/sponsors/tambourine',
+      "/session/onoueyosuke",
+      "/session/taguchiwataru",
+      "/session/matsushitaeri",
+      "/session/kojimadaiki",
+      "/session/jimboyoshihide",
+      "/session/suzukitakayuki",
+      "/session/hamadamasanari",
+      "/session/okitakanori",
+      "/session/maedakeisuke",
+      "/session/sakakibaramasahiko",
+      "/session/hiranomasashi",
+      "/session/yamashitakazuki",
+      "/session/kirillvasiltsov",
+      "/session/onishiyuji",
+      "/session/conti",
+      "/session/hanatanitakuma",
+      "/session/okunokentaro",
+      "/session/kawamatayuga",
+      "/session/mikakane",
+      "/handson/izumi",
+      "/handson/sayanaka",
+      "/handson/kamiyam",
+    ],
+    fallback: true,
+  },
+  router:{
+    scrollBehavior(to, from, savedPosition) {
+      return { x: 0, y: 0 }
+    }
+  }
 };

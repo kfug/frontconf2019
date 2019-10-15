@@ -11,7 +11,7 @@
             <a :href="item.url" target="_blank" rel="noopener">
               <img class="p-item__image" :src="`/images/sponsors/${item.key}.png`" :alt="item.name">
             </a>
-<!--            <a class="p-item__btn" href="">紹介ページ</a>-->
+            <router-link class="p-item__btn" v-if="item.page" :to="item.page">紹介ページ</router-link>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@
             <a :href="item.url" target="_blank" rel="noopener">
               <img class="p-item__image" :src="`/images/sponsors/${item.key}.png`" :alt="item.name">
             </a>
-<!--            <a class="p-item__btn" href="">紹介ページ</a>-->
+            <router-link class="p-item__btn" v-if="item.page" :to="item.page">紹介ページ</router-link>
           </div>
         </div>
       </div>
@@ -35,9 +35,40 @@
             </a>
           </div>
         </div>
+        <div class="p-silver__item"/>
+        <div class="p-silver__item"/>
       </div>
 
-<!--      <div class="p-sponsors__text">-->
+      <div class="p-sponsorsTitle">
+        <h2 class="p-sponsorsTitle__title">Media・Support</h2>
+      </div>
+
+      <div class="p-media">
+        <div class="p-silver__item" v-for="item in medias" :key="item.key">
+          <div class="p-item">
+            <a :href="item.url" target="_blank" rel="noopener">
+              <img class="p-item__image" :src="`/images/sponsors/${item.key}.png`" :alt="item.name">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-sponsorsTitle">
+        <h2 class="p-sponsorsTitle__title">Groups</h2>
+      </div>
+
+      <div class="p-media">
+        <div class="p-silver__item" v-for="item in communities" :key="item.key">
+          <div class="p-item">
+            <router-link :to="`/group/${item.key}`" rel="noopener">
+              <img class="p-item__image" :src="`/images/communities/${item.image}`" :alt="item.name">
+            </router-link>
+          </div>
+        </div>
+      </div>
+
+
+      <!--      <div class="p-sponsors__text">-->
 <!--        FRONTEND CONFERENCE 2019 では スポンサー企業様のご協賛をお待ちしております！-->
 <!--        <br />-->
 <!--        <br />-->
@@ -58,11 +89,13 @@
 
 <script>
 const {sponsors} = require("json-loader!yaml-loader!~/contents/sponsors.yml");
+const {communities} = require("json-loader!yaml-loader!~/contents/communities.yml");
 
 export default {
     data(){
         return {
-            sponsors
+            sponsors,
+            communities
         }
     },
     computed:{
@@ -79,6 +112,11 @@ export default {
         silvers(){
             return this.sponsors.filter(item => {
                 return item.rank === "silver"
+            })
+        },
+        medias(){
+            return this.sponsors.filter(item => {
+                return item.rank === "media"
             })
         }
     }
@@ -119,7 +157,8 @@ export default {
 
 .p-platinums,
 .p-gold,
-.p-silver{
+.p-silver,
+.p-media{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

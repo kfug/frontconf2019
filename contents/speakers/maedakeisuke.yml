@@ -1,0 +1,14 @@
+name: 前田 圭介
+company: 株式会社CI
+hall: "A-5"
+time: "14:40"
+detail: |
+  Web Engineerとしてフロントエンドとバックエンド、インフラ(AWS)を葛藤しています。
+image: maedakeisuke.jpg
+twitter: https://twitter.com/voyagesister
+facebook:
+link:
+session:
+  title: AWSを活用したフロントエンド開発
+  detail: |
+    WEBアプリケーション開発において必要なユーザ認証やデータベース、そのほかバックエンドな箇所をAWSをフル活用する事でフロントエンドファーストに開発できる方法を紹介します。
