@@ -8,5 +8,15 @@ twitter: https://twitter.com/zilch8
 facebook:
 link:
 session:
-  title:
-  detail:
+  title: Angular 入門ハンズオン
+  detail: |
+    AngularはWebアプリケーションのフレームワークです。
+    Googleが開発しており、Webアプリに必要な全ての機能が含まれています。
+
+    当セッションでは、Angularに初めてふれる方・興味がある方に向けた簡単なハンズオンを行う予定です。
+    Angularの世界へ、一緒に楽しく、入門していきましょう！
+
+    参加条件
+    - PCを持参できること
+    - Node.js(v10.x以上) / npm(v5.2以上)がインストールされていること
+    - HTML/CSS/JavaScriptの経験があること
