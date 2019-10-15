@@ -91,8 +91,9 @@ export default {
       "/session/okunokentaro",
       "/session/kawamatayuga",
       "/session/mikakane",
-
-
+      "/handson/izumi",
+      "/handson/sayanaka",
+      "/handson/kamiyam",
     ],
     fallback: true,
   },

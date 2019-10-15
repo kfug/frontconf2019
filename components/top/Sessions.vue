@@ -40,13 +40,13 @@
             セッションだけじゃない、ハンズオン企画も！
             <br />
             フロントエンド技術を用いた Web制作をテーマにした ハンズオン企画を検討中！
-            今どきのフロントエンド制作フローを体験したいかたは是非ご参加ください。
-            <br />
-            ハンズオンのコンテンツは近日公開です！
+            今どきのフロントエンド制作フローを体験したいあなたにオススメの体験型コンテンツ！
+            <br>
+            少人数フロアでの開催となるため、プレミアムチケットの購入がおすすめです！
           </p>
-<!--          <div class="p-about_actions">-->
-<!--            <nuxt-link class="p-about_btn" to="/session">ハンズオン 一覧</nuxt-link>-->
-<!--          </div>-->
+          <div class="p-about_actions">
+            <nuxt-link class="p-about_btn" to="/handson">ハンズオン 一覧</nuxt-link>
+          </div>
         </div>
       </div>
     </div>

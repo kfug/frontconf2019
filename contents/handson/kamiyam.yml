@@ -1,5 +1,7 @@
 name: Kamiya Shimpei
 company: METEORWORKS Inc.
+hall: "D-3"
+time: "14:00"
 detail: |
   元自動車整備士。後に自動車アフターパーツメーカー勤務
   自身の自動車を取り扱ったWebサイトの運営からインターネットに興味を持つ。
@@ -9,6 +11,7 @@ image: kamiyam.jpg
 twitter: https://twitter.com/kamiyam
 facebook:
 link:
+#guideline: github url here!
 session:
   title: React 入門ハンズオン
   detail: |
