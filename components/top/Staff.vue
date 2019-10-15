@@ -11,7 +11,7 @@
               target="_blank"
             >
               <span
-                :style="{ 'background-image' : 'url(' + staff.img + ')' }"
+                :style="{ 'background-image' : 'url(/images/staffs/' + staff.img + ')' }"
                 class="p-staff__member--img"
               ></span>
               <span class="p-staff__member--name">{{ staff.name }}</span>
@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <div class="p-staff__intro">
+      <div class="p-staff__intro" v-if="false">
         <h1 class="p-staff__heading">Designer</h1>
         <div class="p-staff__container">
           <div v-for="(designer, index) in designers" :key="index" class="p-staff__member">
