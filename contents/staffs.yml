@@ -1,0 +1,47 @@
+staffs:
+  - name: 鈴木一郎
+    img: /images/staffs/ST001.png
+    url: /staff1
+  - name: 鈴木次郎
+    img: /images/staffs/ST001.png
+    url:
+  - name: 鈴木三郎
+    img: /images/staffs/ST001.png
+    url:
+  - name: スタッフA
+    img: /images/staffs/ST001.png
+    url: /staffA
+  - name: スタッフB
+    img: /images/staffs/ST001.png
+    url: /staffB
+  - name: スタッフC
+    img: /images/staffs/ST001.png
+    url: /staffC
+  - name: スタッフD
+    img: /images/staffs/ST001.png
+    url: /staffD
+  - name: スタッフE
+    img: /images/staffs/ST001.png
+    url:
+  - name: スタッフF
+    img: /images/staffs/ST001.png
+    url:
+  - name: スタッフG
+    img: /images/staffs/ST001.png
+    url: /staffG
+  - name: スタッフH
+    img: /images/staffs/ST001.png
+    url:
+  - name: スタッフI
+    img: /images/staffs/ST001.png
+    url:
+designers:
+  - name: 鈴木一郎
+    img: /images/staffs/ST001.png
+    url: /designer1
+  - name: 鈴木次郎
+    img: /images/staffs/ST001.png
+    url:
+  - name: 鈴木三郎
+    img: /images/staffs/ST001.png
+    url: /designer2
