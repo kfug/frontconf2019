@@ -180,7 +180,7 @@
     }
     &_halltag--D {
       display: inline-block;
-      background-color: #56B6DB;
+      background-color: #F6AD48;
       border-radius: 5px;
       color: #FFFFFF;
       padding: 3px 12px;
