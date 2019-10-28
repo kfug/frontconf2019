@@ -22,7 +22,7 @@
         <div class="p-about_intro">
           <h1 class="p-about_secHeading">Lightning Talk</h1>
           <p class="p-about_read">
-            本編ラストの Lightning Talk は現在 Connpass にて募集中！
+            本編ラストの Lightning Talk は現在 Connpass にて募集を実施！
             <br />
             ５分のスタイルで話すショートセッションで、登壇が初めての人でも気軽に参加できます！
             <br />
@@ -39,7 +39,7 @@
           <p class="p-about_read">
             セッションだけじゃない、ハンズオン企画も！
             <br />
-            フロントエンド技術を用いた Web制作をテーマにした ハンズオン企画を検討中！
+            フロントエンド技術を用いた Web制作をテーマにした ハンズオン企画を開催！
             今どきのフロントエンド制作フローを体験したいあなたにオススメの体験型コンテンツ！
             <br>
             少人数フロアでの開催となるため、プレミアムチケットの購入がおすすめです！
