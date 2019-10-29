@@ -29,7 +29,9 @@
           <span class="p-speaker_icon p-linkIcon"/>
         </a>
         <br>
-        <iframe class = "p-speaker_hatenalink"
+        <iframe
+                v-if="speaker.slide_url"
+                class = "p-speaker_hatenalink"
                 :title="`${speaker.session.title}`"
                 src="https://hatenablog-parts.com/embed?url=https://nelog.jp/hatenablogcard"
                 frameborder="0"
