@@ -28,6 +28,13 @@
         <a v-if="speaker.link" :href="speaker.link" target="_blank">
           <span class="p-speaker_icon p-linkIcon"/>
         </a>
+        <br>
+        <iframe class = "p-speaker_hatenalink"
+                :title="`${speaker.session.title}`"
+                src="https://hatenablog-parts.com/embed?url=https://nelog.jp/hatenablogcard"
+                frameborder="0"
+                scrolling="no">
+        </iframe>
       </div>
     </div>
   </div>
@@ -245,6 +252,13 @@
       height: 40px;
       background-size: contain;
       background: no-repeat center;
+    }
+
+    &_hatenalink{
+      width: 100%;
+      height: 155px;
+      max-width: 500px;
+      margin: 10px 0px;
     }
   }
 
