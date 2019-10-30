@@ -8,7 +8,8 @@
           </h1>
           <p class="p-ticket__description">
             <span v-if="soldOut">
-              ありがとうございました
+              FRONTEND CONFERENCE 2019 の参加にはチケットの購入が必要です。 <br>
+              チケットの購入は Peatix にて
             </span>
             <span v-else>
               チケット販売を開始しました。 <br>
@@ -20,7 +21,7 @@
             href="https://frontconf2019.peatix.com/" target="_blank"
           >
             <span v-if="soldOut">
-              完売しました
+              完売御礼
             </span>
             <span v-else>
               チケット購入！
@@ -37,7 +38,7 @@
     name: "Ticket.vue",
     data() {
       return {
-        soldOut: false
+        soldOut: true
       }
     }
   }
