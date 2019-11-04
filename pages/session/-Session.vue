@@ -33,7 +33,7 @@
                 v-if="speaker.slide_url"
                 class = "p-speaker_hatenalink"
                 :title="`${speaker.session.title}`"
-                src="https://hatenablog-parts.com/embed?url=https://nelog.jp/hatenablogcard"
+                :src="`https://hatenablog-parts.com/embed?url=${speaker.slide_url}`"
                 frameborder="0"
                 scrolling="no">
         </iframe>
@@ -212,6 +212,10 @@
     @include desktop() {
       flex-wrap: nowrap;
       text-align: left;
+    }
+
+    &_info{
+      width: 100%;
     }
 
     &_img {

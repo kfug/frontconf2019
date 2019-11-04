@@ -10,6 +10,7 @@ image: kawamatayuga.jpeg
 twitter:
 facebook:
 link:
+slide_url: https://speakerdeck.com/yugkwmt/frontend-conference-2019
 session:
   title: JavaScript も jQuery も未経験の新人エンジニアが 1 年間 Vue.js を学習して感じた話
   detail: |

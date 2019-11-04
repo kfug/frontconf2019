@@ -10,6 +10,7 @@ facebook:
 tag: angular
 tagkey: ngkyoto
 link: https://okunokentaro.com
+slide_url: https://speakerdeck.com/okunokentaro/frontend-conference-2019
 session:
   title: ディレクトリ構成ベストプラクティス 〜 Angularアプリを作り続けてわかったこと
   detail: |
