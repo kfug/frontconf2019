@@ -1,46 +1,46 @@
 staffs:
   - name: jiyuujin (北村勇磨)
     img: st001.jpg
-    url:
+    url: https://webneko.dev/
   - name: ちげ
     img: st002.jpg
-    url:
+    url: https://twitter.com/Chige12_
   - name: shisama
     img: st003.png
-    url:
+    url: https://twitter.com/shisama_
   - name: is_ryo
     img: st004.jpg
-    url:
+    url: https://twitter.com/is_ryo
   - name: 有柚まさき
     img: st005.jpg
-    url:
+    url: https://twitter.com/m_msak7
   - name: 淀川コナン
     img: st006.png
-    url:
+    url: https://twitter.com/aktuehr
   - name: 宮瀬拓郎
     img: st007.jpg
-    url:
+    url: https://twitter.com/biriken_jp
   - name: yasui.risa
     img: st008.jpg
     url:
   - name: Chiaki Uehira
     img: st009.jpg
-    url:
+    url: https://twitter.com/_uhck
   - name: chan_kaku
     img: st010.jpg
-    url:
+    url: https://twitter.com/chan_kakuz
   - name: ショウノシオリ
     img: st011.jpg
-    url:
+    url: https://twitter.com/shosho_egg
   - name: えび
     img: st012.jpg
     url:
   - name: ヒジリハラダ
     img: st013.jpg
-    url:
+    url: https://twitter.com/hjrhrd
   - name: sayanaka
     img: st014.jpg
-    url:
+    url: https://twitter.com/zilch8
 #  - name: ばーばら
 #    img:
 #    url:
@@ -55,52 +55,52 @@ staffs:
 #    url:
   - name: たかし
     img: st101.png
-    url:
+    url: https://twitter.com/takashimelon
   - name: Hack-Man
     img: st102.jpg
-    url:
+    url: https://twitter.com/mogus_workshop
   - name: そるてぃ
     img: st103.jpg
-    url:
+    url: https://twitter.com/salty317
   - name: ベスター
     img: st104.jpg
     url:
   - name: かずきち
     img: st105.png
-    url:
+    url: https://twitter.com/h_tyokinuhata
   - name: natsu
     img: st106.jpg
-    url:
+    url: https://twitter.com/natsut_t
   - name: Amami
     img: st107.jpg
     url:
   - name: まつい
     img: st108.jpg
-    url:
+    url: https://twitter.com/kenzen_person
   - name: かっきー
     img: st109.jpg
-    url:
+    url: https://nnn-kakimoto.github.io/mySite/
   - name: あすにゃん
     img: st110.png
-    url:
+    url: https://twitter.com/nyam_ekimemo
   - name: ありっさ
     img: st201.jpg
-    url:
+    url: https://www.facebook.com/masa21ari
   - name: けいちゃん
     img: st202.jpg
-    url:
+    url: https://www.facebook.com/keichan0908
   - name: しおん
     img: st203.jpg
-    url:
+    url: https://twitter.com/shion_1019111
   - name: shuta
     img: st301.png
-    url:
+    url: https://did0es.me/
   - name: Kodai
     img: st302.jpg
-    url:
+    url: https://github.com/0918nobita
   - name: ygkn
     img: st303.jpg
-    url:
+    url: https://ygkn.github.io/
   - name: momonga
     img: st304.png
     url:
