@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "json-loader": "^0.5.7",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "yaml-loader": "^0.5.0"
   },
   "devDependencies": {
